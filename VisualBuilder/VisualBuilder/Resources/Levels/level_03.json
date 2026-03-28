@@ -1,0 +1,106 @@
+{
+  "id": 3,
+  "name": "Build a Garden",
+  "description": "Create a beautiful garden with flowers, trees, a fence, and a path",
+  "challengeTime": 105,
+  "gridSize": { "width": 7, "height": 6 },
+  "backgroundTheme": "nature_green",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Nature calls, builder! Create a beautiful garden. Plant flowers, grow trees, lay a path, and put up a fence. Make it bloom!",
+        "voiceStyle": "peaceful_nature",
+        "rate": 0.45,
+        "pitchMultiplier": 1.0
+      },
+      {
+        "text": "Breathe in that fresh air! Today we're building a garden paradise. Every flower counts, every tree matters. Let's grow something beautiful!",
+        "voiceStyle": "relaxed_ranger",
+        "rate": 0.47,
+        "pitchMultiplier": 0.95
+      },
+      {
+        "text": "Green thumb time! From seeds to splendor, this garden won't build itself. Grab your pieces and let's plant!",
+        "voiceStyle": "excited_mentor",
+        "rate": 0.5,
+        "pitchMultiplier": 1.05
+      }
+    ],
+    "progress": {
+      "25": ["The garden is sprouting! Keep planting!", "First seeds are in! This will be beautiful."],
+      "50": ["Halfway to paradise! The garden is blooming!", "Looking greener already! Keep going!"],
+      "75": ["Almost a full garden! Just a few more pieces!", "Nature is taking shape! Almost done!"],
+      "100": ["What a gorgeous garden! The flowers are blooming!", "Eden has nothing on this! Beautiful work!"]
+    },
+    "tension": {
+      "50": ["The seasons are changing! Better hurry, gardener!", "Half the time has wilted away!"],
+      "25": ["Winter is coming! Finish planting fast!", "The sun is setting on your time!"],
+      "10": ["Quick! Plant those last pieces before frost!", "Seconds left! Every moment counts!"],
+      "expired": ["The frost got the garden! Time ran out!", "Season's over! The timer beat you this time."]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "formal_garden",
+      "slots": [
+        { "id": "tree_left", "position": { "x": 0, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "tree", "label": "Left tree" },
+        { "id": "tree_right", "position": { "x": 5, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "tree", "label": "Right tree" },
+        { "id": "flower_bed_1", "position": { "x": 1, "y": 2 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "flowers", "label": "Left flower bed" },
+        { "id": "flower_bed_2", "position": { "x": 4, "y": 2 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "flowers", "label": "Right flower bed" },
+        { "id": "path", "position": { "x": 3, "y": 0 }, "size": { "width": 1, "height": 4 }, "acceptsPieceType": "path", "label": "Garden path" },
+        { "id": "fence_front", "position": { "x": 0, "y": 0 }, "size": { "width": 3, "height": 1 }, "acceptsPieceType": "fence", "label": "Front fence left" },
+        { "id": "fence_front_r", "position": { "x": 4, "y": 0 }, "size": { "width": 3, "height": 1 }, "acceptsPieceType": "fence", "label": "Front fence right" },
+        { "id": "bench", "position": { "x": 2, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "bench", "label": "Garden bench" }
+      ]
+    },
+    {
+      "variantId": "cottage_garden",
+      "slots": [
+        { "id": "tree_center", "position": { "x": 3, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "tree", "label": "Center tree" },
+        { "id": "tree_corner", "position": { "x": 0, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "tree", "label": "Corner tree" },
+        { "id": "flower_bed_1", "position": { "x": 0, "y": 1 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "flowers", "label": "Side flowers" },
+        { "id": "flower_bed_2", "position": { "x": 5, "y": 1 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "flowers", "label": "Far flowers" },
+        { "id": "path", "position": { "x": 2, "y": 0 }, "size": { "width": 1, "height": 4 }, "acceptsPieceType": "path", "label": "Winding path" },
+        { "id": "fence_front", "position": { "x": 0, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "fence", "label": "Front fence" },
+        { "id": "fence_front_r", "position": { "x": 3, "y": 0 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "fence", "label": "Side fence" },
+        { "id": "bench", "position": { "x": 5, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "bench", "label": "Resting bench" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    { "id": "tree_piece_1", "type": "tree", "label": "Oak tree", "size": { "width": 2, "height": 2 }, "colorVariants": ["#2E7D32", "#388E3C", "#1B5E20", "#43A047"], "textureVariants": ["oak", "maple", "willow"] },
+    { "id": "tree_piece_2", "type": "tree", "label": "Pine tree", "size": { "width": 2, "height": 2 }, "colorVariants": ["#1B5E20", "#33691E", "#2E7D32", "#004D40"], "textureVariants": ["pine", "spruce", "cedar"] },
+    { "id": "flower_piece_1", "type": "flowers", "label": "Rose bed", "size": { "width": 2, "height": 1 }, "colorVariants": ["#E91E63", "#F44336", "#FF5722", "#FF9800"], "textureVariants": ["roses", "tulips", "daisies"] },
+    { "id": "flower_piece_2", "type": "flowers", "label": "Daisy patch", "size": { "width": 2, "height": 1 }, "colorVariants": ["#FFC107", "#FFEB3B", "#FF9800", "#FFE082"], "textureVariants": ["sunflowers", "lavender", "wildflowers"] },
+    { "id": "path_piece", "type": "path", "label": "Stone path", "size": { "width": 1, "height": 4 }, "colorVariants": ["#9E9E9E", "#BDBDBD", "#795548", "#A1887F"], "textureVariants": ["cobblestone", "gravel", "flagstone"] },
+    { "id": "fence_piece_1", "type": "fence", "label": "Fence section", "size": { "width": 3, "height": 1 }, "colorVariants": ["#EFEBE9", "#D7CCC8", "#8D6E63", "#5D4037"], "textureVariants": ["picket", "rustic", "iron"] },
+    { "id": "fence_piece_2", "type": "fence", "label": "Fence section", "size": { "width": 3, "height": 1 }, "colorVariants": ["#EFEBE9", "#D7CCC8", "#8D6E63", "#5D4037"], "textureVariants": ["picket", "rustic", "iron"] },
+    { "id": "bench_piece", "type": "bench", "label": "Garden bench", "size": { "width": 1, "height": 1 }, "colorVariants": ["#5D4037", "#4E342E", "#3E2723", "#6D4C41"], "textureVariants": ["wooden", "iron", "stone"] }
+  ],
+
+  "bonusPieces": [
+    { "id": "bird_bath", "label": "Bird bath", "probability": 0.4 },
+    { "id": "garden_gnome", "label": "Garden gnome", "probability": 0.3 },
+    { "id": "butterfly", "label": "Butterfly", "probability": 0.5 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_03_gnome_hunt",
+      "type": "tap",
+      "trigger": { "position": { "x": 6, "y": 5 }, "tapsRequired": 4 },
+      "reward": { "type": "audio", "content": "You found the hidden garden gnome! He says: 'I've been waiting for you!'" },
+      "hint": "Tap the far corner of the garden four times"
+    },
+    {
+      "id": "ee_03_green_thumb",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 30 },
+      "reward": { "type": "visual", "content": "Butterflies swarm the garden! You earned the Green Thumb badge!" },
+      "hint": "Complete the garden in under 30 seconds"
+    }
+  ]
+}

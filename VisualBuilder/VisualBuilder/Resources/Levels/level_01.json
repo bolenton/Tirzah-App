@@ -1,0 +1,169 @@
+{
+  "id": 1,
+  "name": "Build a House",
+  "description": "Place the walls, roof, and door to build a cozy house",
+  "challengeTime": 120,
+  "gridSize": { "width": 6, "height": 6 },
+  "backgroundTheme": "suburban",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Welcome, builder! Your very first challenge awaits. Can you build the perfect house? Walls, a roof, and a door. Let's see what you've got!",
+        "voiceStyle": "friendly_narrator",
+        "rate": 0.48,
+        "pitchMultiplier": 1.0
+      },
+      {
+        "text": "Ah, a new architect arrives! Show me what kind of house you can build. Start with the walls and work your way up!",
+        "voiceStyle": "excited_mentor",
+        "rate": 0.5,
+        "pitchMultiplier": 1.1
+      },
+      {
+        "text": "Every great builder starts somewhere. Today, you build your first home. Take your time, place each piece carefully, and make it shine!",
+        "voiceStyle": "wise_narrator",
+        "rate": 0.45,
+        "pitchMultiplier": 0.95
+      },
+      {
+        "text": "Home sweet home! But first, you have to build it. Grab those walls, slap on a roof, and don't forget the front door!",
+        "voiceStyle": "friendly_narrator",
+        "rate": 0.52,
+        "pitchMultiplier": 1.05
+      }
+    ],
+    "progress": {
+      "25": [
+        "Great start! The foundation is looking solid.",
+        "You're on your way, builder! Keep it up!"
+      ],
+      "50": [
+        "The house is taking shape! Halfway there!",
+        "Looking good! You can already see it coming together."
+      ],
+      "75": [
+        "Almost done! Just a few more pieces to go!",
+        "So close! The house is nearly complete!"
+      ],
+      "100": [
+        "Magnificent! You built a beautiful house!",
+        "Welcome home! What a wonderful first build!"
+      ]
+    },
+    "tension": {
+      "50": [
+        "Halfway through the clock. Keep building!",
+        "Half your time is gone, but you've got this!"
+      ],
+      "25": [
+        "The clock is ticking, builder! Pick up the pace!",
+        "Time is running short! Keep those pieces moving!"
+      ],
+      "10": [
+        "Hurry! Almost out of time!",
+        "Quick, quick, quick! Just a few seconds left!"
+      ],
+      "expired": [
+        "Oh no! Time's up! So close though!",
+        "The clock ran out. Better luck next time, builder!"
+      ]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "classic",
+      "slots": [
+        { "id": "wall_left", "position": { "x": 1, "y": 1 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "wall", "label": "Left wall" },
+        { "id": "wall_right", "position": { "x": 4, "y": 1 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "wall", "label": "Right wall" },
+        { "id": "roof", "position": { "x": 1, "y": 4 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "roof", "label": "Roof" },
+        { "id": "door", "position": { "x": 2, "y": 1 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "door", "label": "Front door" },
+        { "id": "window", "position": { "x": 3, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Window" }
+      ]
+    },
+    {
+      "variantId": "wide_house",
+      "slots": [
+        { "id": "wall_left", "position": { "x": 0, "y": 1 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "wall", "label": "Left wall" },
+        { "id": "wall_right", "position": { "x": 5, "y": 1 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "wall", "label": "Right wall" },
+        { "id": "roof", "position": { "x": 0, "y": 4 }, "size": { "width": 6, "height": 1 }, "acceptsPieceType": "roof", "label": "Roof" },
+        { "id": "door", "position": { "x": 2, "y": 1 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "door", "label": "Front door" },
+        { "id": "window", "position": { "x": 4, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Window" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    {
+      "id": "wall_piece_1",
+      "type": "wall",
+      "label": "Left wall section",
+      "size": { "width": 1, "height": 3 },
+      "colorVariants": ["#FF6B35", "#8B4513", "#A0522D", "#CD853F"],
+      "textureVariants": ["brick", "wood", "stone"]
+    },
+    {
+      "id": "wall_piece_2",
+      "type": "wall",
+      "label": "Right wall section",
+      "size": { "width": 1, "height": 3 },
+      "colorVariants": ["#FF6B35", "#8B4513", "#A0522D", "#CD853F"],
+      "textureVariants": ["brick", "wood", "stone"]
+    },
+    {
+      "id": "roof_piece",
+      "type": "roof",
+      "label": "Roof",
+      "size": { "width": 4, "height": 1 },
+      "colorVariants": ["#D32F2F", "#1565C0", "#2E7D32", "#6A1B9A"],
+      "textureVariants": ["shingle", "tile", "thatch"]
+    },
+    {
+      "id": "door_piece",
+      "type": "door",
+      "label": "Front door",
+      "size": { "width": 1, "height": 2 },
+      "colorVariants": ["#5D4037", "#1B5E20", "#BF360C", "#4A148C"],
+      "textureVariants": ["wooden", "painted", "glass"]
+    },
+    {
+      "id": "window_piece",
+      "type": "window",
+      "label": "Window",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#42A5F5", "#80DEEA", "#E1F5FE", "#B3E5FC"],
+      "textureVariants": ["clear", "frosted", "stained"]
+    }
+  ],
+
+  "bonusPieces": [
+    { "id": "flower_pot", "label": "Flower pot", "probability": 0.5 },
+    { "id": "welcome_mat", "label": "Welcome mat", "probability": 0.4 },
+    { "id": "chimney", "label": "Chimney", "probability": 0.3 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_01_chimney_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 4, "y": 5 }, "tapsRequired": 3 },
+      "reward": { "type": "audio", "content": "A tiny voice whispers: Is anyone home?" },
+      "hint": "Tap above the roof three times"
+    },
+    {
+      "id": "ee_01_speed_demon",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 20 },
+      "reward": { "type": "visual", "content": "The house transforms into a gingerbread house!" },
+      "hint": "Complete the house in under 20 seconds"
+    },
+    {
+      "id": "ee_01_backwards_build",
+      "type": "sequence",
+      "trigger": { "pieceSequence": ["window_piece", "door_piece", "roof_piece", "wall_piece_2", "wall_piece_1"] },
+      "reward": { "type": "narrative", "content": "Building backwards? That's one way to do it! You unlocked the Rebel Builder badge!" },
+      "hint": "Build the house in reverse order: window first, walls last"
+    }
+  ]
+}

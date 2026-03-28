@@ -1,0 +1,88 @@
+{
+  "id": 4,
+  "name": "Build a Playground",
+  "description": "Create the ultimate playground with slides, swings, and a sandbox",
+  "challengeTime": 100,
+  "gridSize": { "width": 7, "height": 6 },
+  "backgroundTheme": "park_bright",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Recess time! Let's build the most awesome playground ever! Slides, swings, and a sandbox. The kids are counting on you!",
+        "voiceStyle": "excited_kid",
+        "rate": 0.52,
+        "pitchMultiplier": 1.15
+      },
+      {
+        "text": "Ready, set, BUILD! This playground needs everything. A super tall slide, swings that go really high, and the biggest sandbox you've ever seen!",
+        "voiceStyle": "excited_kid",
+        "rate": 0.55,
+        "pitchMultiplier": 1.1
+      },
+      {
+        "text": "Fun is serious business, builder! Every kid deserves an amazing playground. Place each piece with joy, and let's create some magic!",
+        "voiceStyle": "friendly_narrator",
+        "rate": 0.48,
+        "pitchMultiplier": 1.0
+      }
+    ],
+    "progress": {
+      "25": ["The playground is starting! Fun incoming!", "First piece down! This is going to be great!"],
+      "50": ["Halfway to fun town! Keep building!", "The kids are getting excited already!"],
+      "75": ["Almost ready for recess! Just a bit more!", "So close to playtime! Finish strong!"],
+      "100": ["The playground is OPEN! Time to play!", "What an amazing playground! The kids love it!"]
+    },
+    "tension": {
+      "50": ["Recess is half over! Build faster!", "The bell is coming! Keep going!"],
+      "25": ["Almost time for class! Hurry up!", "The kids are waiting! Faster, builder!"],
+      "10": ["The bell is about to ring! Quick!", "Seconds left! Place those last pieces!"],
+      "expired": ["Ring ring! Recess is over! Time ran out!", "Back to class! The playground will have to wait."]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "standard",
+      "slots": [
+        { "id": "slide", "position": { "x": 0, "y": 2 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "slide", "label": "Slide" },
+        { "id": "swings", "position": { "x": 3, "y": 3 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "swings", "label": "Swing set" },
+        { "id": "sandbox", "position": { "x": 5, "y": 0 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "sandbox", "label": "Sandbox" },
+        { "id": "seesaw", "position": { "x": 0, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "seesaw", "label": "Seesaw" },
+        { "id": "climber", "position": { "x": 3, "y": 0 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "climber", "label": "Climbing frame" },
+        { "id": "bench", "position": { "x": 6, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "bench", "label": "Park bench" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    { "id": "slide_piece", "type": "slide", "label": "Big slide", "size": { "width": 2, "height": 3 }, "colorVariants": ["#F44336", "#FF5722", "#E91E63", "#FF9800"], "textureVariants": ["plastic", "metal", "tube"] },
+    { "id": "swings_piece", "type": "swings", "label": "Swing set", "size": { "width": 2, "height": 2 }, "colorVariants": ["#2196F3", "#03A9F4", "#00BCD4", "#3F51B5"], "textureVariants": ["rubber", "wooden", "tire"] },
+    { "id": "sandbox_piece", "type": "sandbox", "label": "Sandbox", "size": { "width": 2, "height": 2 }, "colorVariants": ["#FFC107", "#FFD54F", "#FFE082", "#FFCA28"], "textureVariants": ["sand", "pebble", "rubber_chip"] },
+    { "id": "seesaw_piece", "type": "seesaw", "label": "Seesaw", "size": { "width": 2, "height": 1 }, "colorVariants": ["#4CAF50", "#8BC34A", "#CDDC39", "#009688"], "textureVariants": ["wooden", "metal", "plastic"] },
+    { "id": "climber_piece", "type": "climber", "label": "Climbing frame", "size": { "width": 2, "height": 2 }, "colorVariants": ["#FF5722", "#F44336", "#9C27B0", "#673AB7"], "textureVariants": ["rope", "metal_bars", "rock_wall"] },
+    { "id": "bench_piece", "type": "bench", "label": "Park bench", "size": { "width": 1, "height": 1 }, "colorVariants": ["#5D4037", "#795548", "#4E342E", "#3E2723"], "textureVariants": ["wooden", "iron", "recycled"] }
+  ],
+
+  "bonusPieces": [
+    { "id": "ball", "label": "Bouncy ball", "probability": 0.5 },
+    { "id": "kite", "label": "Kite", "probability": 0.3 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_04_swing_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 4, "y": 5 }, "tapsRequired": 6 },
+      "reward": { "type": "audio", "content": "Wheee! You can hear children laughing on the swings!" },
+      "hint": "Tap above the swings six times to hear the kids play"
+    },
+    {
+      "id": "ee_04_lightning_build",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 22 },
+      "reward": { "type": "narrative", "content": "Lightning builder! You built the playground faster than recess! Playground Champion badge earned!" },
+      "hint": "Build the entire playground in under 22 seconds"
+    }
+  ]
+}

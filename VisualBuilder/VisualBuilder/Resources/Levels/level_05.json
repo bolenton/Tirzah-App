@@ -1,0 +1,113 @@
+{
+  "id": 5,
+  "name": "Build a School",
+  "description": "Construct a school with a building, windows, a flag, and a bus",
+  "challengeTime": 95,
+  "gridSize": { "width": 8, "height": 6 },
+  "backgroundTheme": "campus",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "School's in session! But first, we need to build it. A strong building, bright windows, a proud flag, and don't forget the school bus!",
+        "voiceStyle": "wise_teacher",
+        "rate": 0.47,
+        "pitchMultiplier": 0.95
+      },
+      {
+        "text": "Attention, class! Today's lesson is in architecture. You'll be constructing an entire school. Every window, every wall matters. Begin!",
+        "voiceStyle": "wise_teacher",
+        "rate": 0.45,
+        "pitchMultiplier": 0.9
+      },
+      {
+        "text": "Learning never stops, and neither does building! Piece by piece, let's create a school that any student would be proud to attend!",
+        "voiceStyle": "friendly_narrator",
+        "rate": 0.5,
+        "pitchMultiplier": 1.0
+      }
+    ],
+    "progress": {
+      "25": ["The school foundation is laid! Keep building!", "Class is starting to take shape!"],
+      "50": ["Halfway there, scholar! The school is rising!", "The building is coming together nicely!"],
+      "75": ["Almost ready for the first day! A few more pieces!", "The school bell is almost ready to ring!"],
+      "100": ["School's open! What a magnificent building!", "A+ work, builder! The school is complete!"]
+    },
+    "tension": {
+      "50": ["The first day of school is approaching fast!", "Half the time gone! Build like you mean it!"],
+      "25": ["The students are arriving! Hurry, builder!", "Almost out of time! The bus is coming!"],
+      "10": ["The bell is about to ring! Finish NOW!", "Last seconds! Place those final pieces!"],
+      "expired": ["First day cancelled! You ran out of time!", "Homework: try again next time!"]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "traditional",
+      "slots": [
+        { "id": "building_base", "position": { "x": 1, "y": 1 }, "size": { "width": 4, "height": 2 }, "acceptsPieceType": "building", "label": "Main building" },
+        { "id": "building_top", "position": { "x": 1, "y": 3 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "roof", "label": "School roof" },
+        { "id": "window_1", "position": { "x": 1, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Left window" },
+        { "id": "window_2", "position": { "x": 2, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Center left window" },
+        { "id": "window_3", "position": { "x": 3, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Center right window" },
+        { "id": "window_4", "position": { "x": 4, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Right window" },
+        { "id": "flag", "position": { "x": 6, "y": 3 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "flag", "label": "Flag pole" },
+        { "id": "bus", "position": { "x": 0, "y": 0 }, "size": { "width": 3, "height": 1 }, "acceptsPieceType": "bus", "label": "School bus" }
+      ]
+    },
+    {
+      "variantId": "modern",
+      "slots": [
+        { "id": "building_base", "position": { "x": 2, "y": 1 }, "size": { "width": 4, "height": 2 }, "acceptsPieceType": "building", "label": "Main building" },
+        { "id": "building_top", "position": { "x": 2, "y": 3 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "roof", "label": "School roof" },
+        { "id": "window_1", "position": { "x": 2, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Window 1" },
+        { "id": "window_2", "position": { "x": 3, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Window 2" },
+        { "id": "window_3", "position": { "x": 4, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Window 3" },
+        { "id": "window_4", "position": { "x": 5, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Window 4" },
+        { "id": "flag", "position": { "x": 0, "y": 4 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "flag", "label": "Flag pole" },
+        { "id": "bus", "position": { "x": 5, "y": 0 }, "size": { "width": 3, "height": 1 }, "acceptsPieceType": "bus", "label": "School bus" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    { "id": "building_piece", "type": "building", "label": "School building", "size": { "width": 4, "height": 2 }, "colorVariants": ["#E8D5B7", "#FFCCBC", "#D7CCC8", "#FFF3E0"], "textureVariants": ["brick", "stucco", "stone"] },
+    { "id": "roof_piece", "type": "roof", "label": "School roof", "size": { "width": 4, "height": 1 }, "colorVariants": ["#5D4037", "#795548", "#37474F", "#455A64"], "textureVariants": ["shingle", "flat", "tile"] },
+    { "id": "window_piece_1", "type": "window", "label": "Window", "size": { "width": 1, "height": 1 }, "colorVariants": ["#42A5F5", "#64B5F6", "#90CAF9", "#BBDEFB"], "textureVariants": ["clear", "grid", "arched"] },
+    { "id": "window_piece_2", "type": "window", "label": "Window", "size": { "width": 1, "height": 1 }, "colorVariants": ["#42A5F5", "#64B5F6", "#90CAF9", "#BBDEFB"], "textureVariants": ["clear", "grid", "arched"] },
+    { "id": "window_piece_3", "type": "window", "label": "Window", "size": { "width": 1, "height": 1 }, "colorVariants": ["#42A5F5", "#64B5F6", "#90CAF9", "#BBDEFB"], "textureVariants": ["clear", "grid", "arched"] },
+    { "id": "window_piece_4", "type": "window", "label": "Window", "size": { "width": 1, "height": 1 }, "colorVariants": ["#42A5F5", "#64B5F6", "#90CAF9", "#BBDEFB"], "textureVariants": ["clear", "grid", "arched"] },
+    { "id": "flag_piece", "type": "flag", "label": "Flag pole with flag", "size": { "width": 1, "height": 2 }, "colorVariants": ["#F44336", "#2196F3", "#4CAF50", "#FF9800"], "textureVariants": ["national", "school", "pennant"] },
+    { "id": "bus_piece", "type": "bus", "label": "School bus", "size": { "width": 3, "height": 1 }, "colorVariants": ["#FFC107", "#FFD54F", "#FFCA28", "#FFB300"], "textureVariants": ["classic", "modern", "mini"] }
+  ],
+
+  "bonusPieces": [
+    { "id": "bell", "label": "School bell", "probability": 0.4 },
+    { "id": "backpack", "label": "Backpack", "probability": 0.3 },
+    { "id": "apple", "label": "Apple for teacher", "probability": 0.5 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_05_bell_ring",
+      "type": "tap",
+      "trigger": { "position": { "x": 3, "y": 4 }, "tapsRequired": 3 },
+      "reward": { "type": "audio", "content": "RING RING RING! The school bell rings! Time for class!" },
+      "hint": "Tap the top of the school building three times"
+    },
+    {
+      "id": "ee_05_honor_roll",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 20 },
+      "reward": { "type": "narrative", "content": "You're on the honor roll! Built the school in record time! Straight A Builder badge earned!" },
+      "hint": "Complete the school in under 20 seconds"
+    },
+    {
+      "id": "ee_05_bus_first",
+      "type": "sequence",
+      "trigger": { "pieceSequence": ["bus_piece", "flag_piece", "building_piece", "roof_piece", "window_piece_1", "window_piece_2", "window_piece_3", "window_piece_4"] },
+      "reward": { "type": "narrative", "content": "The bus arrived before the school was built! Now THAT'S planning ahead! Early Bird badge earned!" },
+      "hint": "Place the school bus first, then the flag, then build the school"
+    }
+  ]
+}

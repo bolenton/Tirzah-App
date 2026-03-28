@@ -1,0 +1,102 @@
+{
+  "id": 2,
+  "name": "Build a Kitchen",
+  "description": "Set up a kitchen with all the essentials — fridge, stove, sink, and more",
+  "challengeTime": 110,
+  "gridSize": { "width": 7, "height": 5 },
+  "backgroundTheme": "indoor_warm",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Time to cook up something special! Build a kitchen from scratch. We need a fridge, a stove, a sink, and all the counters!",
+        "voiceStyle": "warm_chef",
+        "rate": 0.48,
+        "pitchMultiplier": 1.0
+      },
+      {
+        "text": "What's cooking, builder? Nothing yet! Because we don't have a kitchen! Let's fix that, shall we?",
+        "voiceStyle": "warm_chef",
+        "rate": 0.5,
+        "pitchMultiplier": 1.1
+      },
+      {
+        "text": "Every great meal starts with a great kitchen. Place each appliance carefully. A chef is only as good as their workspace!",
+        "voiceStyle": "wise_narrator",
+        "rate": 0.47,
+        "pitchMultiplier": 0.95
+      }
+    ],
+    "progress": {
+      "25": ["The kitchen is starting to come together!", "First appliance in! Keep going!"],
+      "50": ["Halfway there! This kitchen is looking great!", "The counters are filling up nicely!"],
+      "75": ["Almost ready to cook! Just a few more pieces!", "Looking delicious! I mean, the kitchen!"],
+      "100": ["Chef's kiss! What a beautiful kitchen!", "Bon appetit! The kitchen is complete!"]
+    },
+    "tension": {
+      "50": ["The timer's ticking! Better hurry, chef!", "Half the time gone, keep placing!"],
+      "25": ["Order up! You're running low on time!", "The kitchen rush is on! Faster!"],
+      "10": ["Last call, chef! Seconds left!", "Almost out of time! Place those pieces!"],
+      "expired": ["Kitchen closed! Time ran out!", "Service is over. The timer wins this round!"]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "l_shaped",
+      "slots": [
+        { "id": "counter_1", "position": { "x": 0, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "counter", "label": "Left counter" },
+        { "id": "sink", "position": { "x": 1, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "sink", "label": "Sink" },
+        { "id": "counter_2", "position": { "x": 2, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "counter", "label": "Middle counter" },
+        { "id": "stove", "position": { "x": 3, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "stove", "label": "Stove" },
+        { "id": "fridge", "position": { "x": 6, "y": 0 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "fridge", "label": "Fridge" },
+        { "id": "counter_3", "position": { "x": 6, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "counter", "label": "Side counter" },
+        { "id": "table", "position": { "x": 2, "y": 3 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "table", "label": "Kitchen table" }
+      ]
+    },
+    {
+      "variantId": "galley",
+      "slots": [
+        { "id": "counter_1", "position": { "x": 0, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "counter", "label": "Left counter" },
+        { "id": "stove", "position": { "x": 1, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "stove", "label": "Stove" },
+        { "id": "sink", "position": { "x": 3, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "sink", "label": "Sink" },
+        { "id": "fridge", "position": { "x": 0, "y": 4 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "fridge", "label": "Fridge" },
+        { "id": "counter_2", "position": { "x": 1, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "counter", "label": "Back counter" },
+        { "id": "counter_3", "position": { "x": 2, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "counter", "label": "Corner counter" },
+        { "id": "table", "position": { "x": 4, "y": 2 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "table", "label": "Dining table" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    { "id": "fridge_piece", "type": "fridge", "label": "Refrigerator", "size": { "width": 1, "height": 2 }, "colorVariants": ["#ECEFF1", "#90A4AE", "#F5F5F5", "#BDBDBD"], "textureVariants": ["stainless", "white", "black"] },
+    { "id": "stove_piece", "type": "stove", "label": "Stove", "size": { "width": 2, "height": 1 }, "colorVariants": ["#424242", "#212121", "#37474F", "#263238"], "textureVariants": ["gas", "electric", "induction"] },
+    { "id": "sink_piece", "type": "sink", "label": "Kitchen sink", "size": { "width": 1, "height": 1 }, "colorVariants": ["#B0BEC5", "#CFD8DC", "#78909C", "#546E7A"], "textureVariants": ["steel", "ceramic", "composite"] },
+    { "id": "counter_piece_1", "type": "counter", "label": "Counter section", "size": { "width": 1, "height": 1 }, "colorVariants": ["#8D6E63", "#A1887F", "#6D4C41", "#4E342E"], "textureVariants": ["granite", "marble", "wood"] },
+    { "id": "counter_piece_2", "type": "counter", "label": "Counter section", "size": { "width": 1, "height": 1 }, "colorVariants": ["#8D6E63", "#A1887F", "#6D4C41", "#4E342E"], "textureVariants": ["granite", "marble", "wood"] },
+    { "id": "counter_piece_3", "type": "counter", "label": "Counter section", "size": { "width": 1, "height": 1 }, "colorVariants": ["#8D6E63", "#A1887F", "#6D4C41", "#4E342E"], "textureVariants": ["granite", "marble", "wood"] },
+    { "id": "table_piece", "type": "table", "label": "Kitchen table", "size": { "width": 2, "height": 2 }, "colorVariants": ["#5D4037", "#795548", "#3E2723", "#4E342E"], "textureVariants": ["oak", "pine", "modern"] }
+  ],
+
+  "bonusPieces": [
+    { "id": "fruit_bowl", "label": "Fruit bowl", "probability": 0.5 },
+    { "id": "spice_rack", "label": "Spice rack", "probability": 0.4 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_02_oven_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 3, "y": 0 }, "tapsRequired": 5 },
+      "reward": { "type": "audio", "content": "Ding! Your invisible cake is ready!" },
+      "hint": "Tap the stove area five times"
+    },
+    {
+      "id": "ee_02_speed_chef",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 25 },
+      "reward": { "type": "narrative", "content": "Speed chef! Gordon Ramsay would be impressed! You earned the Master Chef badge!" },
+      "hint": "Complete the kitchen in under 25 seconds"
+    }
+  ]
+}
