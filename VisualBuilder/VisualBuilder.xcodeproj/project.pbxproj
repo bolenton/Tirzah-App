@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10001010000000000000001 /* VisualBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000001 /* VisualBuilderApp.swift */; };
+		A10001010000000000000002 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000002 /* AppCoordinator.swift */; };
+		A10001010000000000000003 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000003 /* Player.swift */; };
+		A10001010000000000000004 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000004 /* GameSession.swift */; };
+		A10001010000000000000005 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000005 /* GameState.swift */; };
+		A10001010000000000000006 /* PlayerProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000006 /* PlayerProgress.swift */; };
+		A10001010000000000000007 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000007 /* MainMenuViewModel.swift */; };
+		A10001010000000000000008 /* LevelSelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000008 /* LevelSelectViewModel.swift */; };
+		A10001010000000000000009 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000009 /* GameViewModel.swift */; };
+		A1000101000000000000000A /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000101000000000000000A /* SettingsViewModel.swift */; };
+		A1000101000000000000000B /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000101000000000000000B /* MainMenuView.swift */; };
+		A1000101000000000000000C /* PlayerSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000101000000000000000C /* PlayerSetupView.swift */; };
+		A1000101000000000000000D /* LevelSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000101000000000000000D /* LevelSelectView.swift */; };
+		A1000101000000000000000E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000101000000000000000E /* GameView.swift */; };
+		A1000101000000000000000F /* NarrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000101000000000000000F /* NarrationView.swift */; };
+		A10001010000000000000010 /* PlayerTurnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000010 /* PlayerTurnView.swift */; };
+		A10001010000000000000011 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000011 /* SettingsView.swift */; };
+		A10001010000000000000012 /* LevelCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000012 /* LevelCompleteView.swift */; };
+		A10001010000000000000013 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000013 /* ScoreboardView.swift */; };
+		A10001010000000000000014 /* AccessibleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000014 /* AccessibleButton.swift */; };
+		A10001010000000000000015 /* PieceTrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000015 /* PieceTrayView.swift */; };
+		A10001010000000000000016 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000016 /* TimerView.swift */; };
+		A10001010000000000000017 /* Color+HighContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000017 /* Color+HighContrast.swift */; };
+		A10001010000000000000018 /* View+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000018 /* View+Accessibility.swift */; };
+		A10001010000000000000019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20001010000000000000019 /* Assets.xcassets */; };
+		A1000101000000000000001A /* easter_egg_catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = A2000101000000000000001A /* easter_egg_catalog.json */; };
+		A1000101000000000000001B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000101000000000000001B /* SwiftUI.framework */; };
+		A1000101000000000000001C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000101000000000000001C /* SpriteKit.framework */; };
+		A1000101000000000000001D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000101000000000000001D /* AVFoundation.framework */; };
+		A1000101000000000000001E /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2000101000000000000001E /* CoreHaptics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20001010000000000000001 /* VisualBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBuilderApp.swift; sourceTree = "<group>"; };
+		A20001010000000000000002 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A20001010000000000000003 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A20001010000000000000004 /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
+		A20001010000000000000005 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		A20001010000000000000006 /* PlayerProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProgress.swift; sourceTree = "<group>"; };
+		A20001010000000000000007 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
+		A20001010000000000000008 /* LevelSelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectViewModel.swift; sourceTree = "<group>"; };
+		A20001010000000000000009 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		A2000101000000000000000A /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		A2000101000000000000000B /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		A2000101000000000000000C /* PlayerSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSetupView.swift; sourceTree = "<group>"; };
+		A2000101000000000000000D /* LevelSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectView.swift; sourceTree = "<group>"; };
+		A2000101000000000000000E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		A2000101000000000000000F /* NarrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrationView.swift; sourceTree = "<group>"; };
+		A20001010000000000000010 /* PlayerTurnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTurnView.swift; sourceTree = "<group>"; };
+		A20001010000000000000011 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A20001010000000000000012 /* LevelCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCompleteView.swift; sourceTree = "<group>"; };
+		A20001010000000000000013 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
+		A20001010000000000000014 /* AccessibleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibleButton.swift; sourceTree = "<group>"; };
+		A20001010000000000000015 /* PieceTrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceTrayView.swift; sourceTree = "<group>"; };
+		A20001010000000000000016 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		A20001010000000000000017 /* Color+HighContrast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+HighContrast.swift"; sourceTree = "<group>"; };
+		A20001010000000000000018 /* View+Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Accessibility.swift"; sourceTree = "<group>"; };
+		A20001010000000000000019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2000101000000000000001A /* easter_egg_catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = easter_egg_catalog.json; sourceTree = "<group>"; };
+		A2000101000000000000001B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A2000101000000000000001C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		A2000101000000000000001D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A2000101000000000000001E /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
+		A2000101000000000000001F /* VisualBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30001010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000101000000000000001B /* SwiftUI.framework in Frameworks */,
+				A1000101000000000000001C /* SpriteKit.framework in Frameworks */,
+				A1000101000000000000001D /* AVFoundation.framework in Frameworks */,
+				A1000101000000000000001E /* CoreHaptics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40001010000000000000001 /* = Begin group root */ = {
+			isa = PBXGroup;
+			children = (
+				A40001010000000000000002 /* VisualBuilder */,
+				A40001010000000000000010 /* Frameworks */,
+				A40001010000000000000011 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40001010000000000000002 /* VisualBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				A40001010000000000000003 /* App */,
+				A40001010000000000000004 /* Models */,
+				A40001010000000000000005 /* ViewModels */,
+				A40001010000000000000006 /* Views */,
+				A40001010000000000000008 /* Extensions */,
+				A40001010000000000000009 /* Resources */,
+			);
+			path = VisualBuilder;
+			sourceTree = "<group>";
+		};
+		A40001010000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20001010000000000000001 /* VisualBuilderApp.swift */,
+				A20001010000000000000002 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A40001010000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20001010000000000000003 /* Player.swift */,
+				A20001010000000000000004 /* GameSession.swift */,
+				A20001010000000000000005 /* GameState.swift */,
+				A20001010000000000000006 /* PlayerProgress.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A40001010000000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A20001010000000000000007 /* MainMenuViewModel.swift */,
+				A20001010000000000000008 /* LevelSelectViewModel.swift */,
+				A20001010000000000000009 /* GameViewModel.swift */,
+				A2000101000000000000000A /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A40001010000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2000101000000000000000B /* MainMenuView.swift */,
+				A2000101000000000000000C /* PlayerSetupView.swift */,
+				A2000101000000000000000D /* LevelSelectView.swift */,
+				A2000101000000000000000E /* GameView.swift */,
+				A2000101000000000000000F /* NarrationView.swift */,
+				A20001010000000000000010 /* PlayerTurnView.swift */,
+				A20001010000000000000011 /* SettingsView.swift */,
+				A20001010000000000000012 /* LevelCompleteView.swift */,
+				A20001010000000000000013 /* ScoreboardView.swift */,
+				A40001010000000000000007 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A40001010000000000000007 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A20001010000000000000014 /* AccessibleButton.swift */,
+				A20001010000000000000015 /* PieceTrayView.swift */,
+				A20001010000000000000016 /* TimerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A40001010000000000000008 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A20001010000000000000017 /* Color+HighContrast.swift */,
+				A20001010000000000000018 /* View+Accessibility.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A40001010000000000000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20001010000000000000019 /* Assets.xcassets */,
+				A4000101000000000000000A /* EasterEggs */,
+				A4000101000000000000000B /* Levels */,
+				A4000101000000000000000C /* Sounds */,
+				A4000101000000000000000D /* Narration */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A4000101000000000000000A /* EasterEggs */ = {
+			isa = PBXGroup;
+			children = (
+				A2000101000000000000001A /* easter_egg_catalog.json */,
+			);
+			path = EasterEggs;
+			sourceTree = "<group>";
+		};
+		A4000101000000000000000B /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		A4000101000000000000000C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		A4000101000000000000000D /* Narration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Narration;
+			sourceTree = "<group>";
+		};
+		A40001010000000000000010 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2000101000000000000001B /* SwiftUI.framework */,
+				A2000101000000000000001C /* SpriteKit.framework */,
+				A2000101000000000000001D /* AVFoundation.framework */,
+				A2000101000000000000001E /* CoreHaptics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A40001010000000000000011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2000101000000000000001F /* VisualBuilder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50001010000000000000001 /* VisualBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70001010000000000000003 /* Build configuration list for PBXNativeTarget "VisualBuilder" */;
+			buildPhases = (
+				A60001010000000000000001 /* Sources */,
+				A30001010000000000000001 /* Frameworks */,
+				A60001010000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisualBuilder;
+			productName = VisualBuilder;
+			productReference = A2000101000000000000001F /* VisualBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80001010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = Tirzah;
+				TargetAttributes = {
+					A50001010000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A70001010000000000000001 /* Build configuration list for PBXProject "VisualBuilder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40001010000000000000001 /* = Begin group root */;
+			productRefGroup = A40001010000000000000011 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50001010000000000000001 /* VisualBuilder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60001010000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001010000000000000019 /* Assets.xcassets in Resources */,
+				A1000101000000000000001A /* easter_egg_catalog.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60001010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001010000000000000001 /* VisualBuilderApp.swift in Sources */,
+				A10001010000000000000002 /* AppCoordinator.swift in Sources */,
+				A10001010000000000000003 /* Player.swift in Sources */,
+				A10001010000000000000004 /* GameSession.swift in Sources */,
+				A10001010000000000000005 /* GameState.swift in Sources */,
+				A10001010000000000000006 /* PlayerProgress.swift in Sources */,
+				A10001010000000000000007 /* MainMenuViewModel.swift in Sources */,
+				A10001010000000000000008 /* LevelSelectViewModel.swift in Sources */,
+				A10001010000000000000009 /* GameViewModel.swift in Sources */,
+				A1000101000000000000000A /* SettingsViewModel.swift in Sources */,
+				A1000101000000000000000B /* MainMenuView.swift in Sources */,
+				A1000101000000000000000C /* PlayerSetupView.swift in Sources */,
+				A1000101000000000000000D /* LevelSelectView.swift in Sources */,
+				A1000101000000000000000E /* GameView.swift in Sources */,
+				A1000101000000000000000F /* NarrationView.swift in Sources */,
+				A10001010000000000000010 /* PlayerTurnView.swift in Sources */,
+				A10001010000000000000011 /* SettingsView.swift in Sources */,
+				A10001010000000000000012 /* LevelCompleteView.swift in Sources */,
+				A10001010000000000000013 /* ScoreboardView.swift in Sources */,
+				A10001010000000000000014 /* AccessibleButton.swift in Sources */,
+				A10001010000000000000015 /* PieceTrayView.swift in Sources */,
+				A10001010000000000000016 /* TimerView.swift in Sources */,
+				A10001010000000000000017 /* Color+HighContrast.swift in Sources */,
+				A10001010000000000000018 /* View+Accessibility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A90001010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A90001010000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A90001010000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VisualBuilder;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tirzah.visualbuilder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A90001010000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VisualBuilder;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tirzah.visualbuilder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70001010000000000000001 /* Build configuration list for PBXProject "VisualBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90001010000000000000001 /* Debug */,
+				A90001010000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70001010000000000000003 /* Build configuration list for PBXNativeTarget "VisualBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90001010000000000000003 /* Debug */,
+				A90001010000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A80001010000000000000001 /* Project object */;
+}
