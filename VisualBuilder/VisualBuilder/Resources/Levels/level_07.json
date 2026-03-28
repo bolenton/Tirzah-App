@@ -1,0 +1,192 @@
+{
+  "id": 7,
+  "name": "Build a Hospital",
+  "description": "Construct a hospital complete with an ambulance, patient beds, and the big red cross. Heal the world, builder!",
+  "challengeTime": 85,
+  "gridSize": { "width": 7, "height": 7 },
+  "backgroundTheme": "medical_district",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Good morning, builder! We have patients arriving and no hospital to treat them in. Can you build one with beds, windows, and that all-important cross sign?",
+        "voiceStyle": "caring_doctor",
+        "rate": 0.48,
+        "pitchMultiplier": 0.95
+      },
+      {
+        "text": "Paging Doctor Builder! The community needs a hospital and you're just the one to construct it. Reception desk, patient beds, the works. Stat!",
+        "voiceStyle": "caring_doctor",
+        "rate": 0.5,
+        "pitchMultiplier": 1.0
+      },
+      {
+        "text": "A hospital is more than a building, it's a place of hope. Let's build one together, piece by piece. Start with the main structure and add all the details!",
+        "voiceStyle": "caring_doctor",
+        "rate": 0.45,
+        "pitchMultiplier": 0.9
+      },
+      {
+        "text": "Attention please! Construction crew needed in the medical district. We need a hospital built before the next ambulance arrives. Ready, builder?",
+        "voiceStyle": "caring_doctor",
+        "rate": 0.52,
+        "pitchMultiplier": 1.05
+      }
+    ],
+    "progress": {
+      "25": [
+        "The first walls are up! This hospital is going to be wonderful.",
+        "Nice work! The foundation is strong and ready for patients."
+      ],
+      "50": [
+        "Halfway there! I can see the reception area taking shape!",
+        "Looking great! The ambulance crew is watching with excitement."
+      ],
+      "75": [
+        "Almost done! The beds are nearly ready for their first patients!",
+        "Just a few more pieces! The nurses are preparing to move in."
+      ],
+      "100": [
+        "The hospital is open! Patients can rest easy knowing they're in great hands!",
+        "What a magnificent hospital! You truly have a healing touch, builder!"
+      ]
+    },
+    "tension": {
+      "50": [
+        "Half the time has passed. The patients are waiting!",
+        "Keep going! There's still time to finish this hospital."
+      ],
+      "25": [
+        "Time is short! The ambulance is almost here!",
+        "Hurry, builder! We need this hospital operational!"
+      ],
+      "10": [
+        "Code blue on the clock! Only seconds remaining!",
+        "Almost out of time! Place those last pieces, quick!"
+      ],
+      "expired": [
+        "Time's up. The patients will have to wait, but you gave it your best.",
+        "The clock ran out. Don't worry, every great doctor learns from setbacks."
+      ]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "standard_hospital",
+      "slots": [
+        { "id": "building_slot", "position": { "x": 1, "y": 1 }, "size": { "width": 5, "height": 4 }, "acceptsPieceType": "building", "label": "Hospital building" },
+        { "id": "ambulance_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "ambulance", "label": "Ambulance" },
+        { "id": "cross_sign_slot", "position": { "x": 3, "y": 5 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "cross_sign", "label": "Red cross sign" },
+        { "id": "reception_slot", "position": { "x": 2, "y": 1 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "reception", "label": "Reception desk" },
+        { "id": "bed_1_slot", "position": { "x": 1, "y": 2 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "bed", "label": "Patient bed 1" },
+        { "id": "bed_2_slot", "position": { "x": 4, "y": 2 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "bed", "label": "Patient bed 2" },
+        { "id": "window_1_slot", "position": { "x": 1, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Left window" },
+        { "id": "window_2_slot", "position": { "x": 5, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Right window" }
+      ]
+    },
+    {
+      "variantId": "tall_hospital",
+      "slots": [
+        { "id": "building_slot", "position": { "x": 0, "y": 1 }, "size": { "width": 7, "height": 4 }, "acceptsPieceType": "building", "label": "Hospital building" },
+        { "id": "ambulance_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "ambulance", "label": "Ambulance" },
+        { "id": "cross_sign_slot", "position": { "x": 3, "y": 5 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "cross_sign", "label": "Red cross sign" },
+        { "id": "reception_slot", "position": { "x": 2, "y": 1 }, "size": { "width": 3, "height": 1 }, "acceptsPieceType": "reception", "label": "Reception desk" },
+        { "id": "bed_1_slot", "position": { "x": 1, "y": 3 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "bed", "label": "Patient bed 1" },
+        { "id": "bed_2_slot", "position": { "x": 4, "y": 3 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "bed", "label": "Patient bed 2" },
+        { "id": "window_1_slot", "position": { "x": 1, "y": 5 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Left window" },
+        { "id": "window_2_slot", "position": { "x": 5, "y": 5 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "window", "label": "Right window" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    {
+      "id": "building_piece",
+      "type": "building",
+      "label": "Hospital building",
+      "size": { "width": 5, "height": 4 },
+      "colorVariants": ["#FFFFFF", "#E3F2FD", "#F5F5F5", "#E8EAF6"],
+      "textureVariants": ["concrete", "stucco", "modern"]
+    },
+    {
+      "id": "ambulance_piece",
+      "type": "ambulance",
+      "label": "Ambulance",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#FFFFFF", "#FFF9C4", "#F5F5F5"],
+      "textureVariants": ["glossy", "matte", "weathered"]
+    },
+    {
+      "id": "cross_sign_piece",
+      "type": "cross_sign",
+      "label": "Red cross sign",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#D32F2F", "#F44336", "#E53935", "#C62828"],
+      "textureVariants": ["neon", "painted", "illuminated"]
+    },
+    {
+      "id": "reception_piece",
+      "type": "reception",
+      "label": "Reception desk",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#8D6E63", "#A1887F", "#6D4C41"],
+      "textureVariants": ["wooden", "laminate", "marble"]
+    },
+    {
+      "id": "bed_1_piece",
+      "type": "bed",
+      "label": "Patient bed 1",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#E0E0E0", "#BBDEFB", "#C8E6C9", "#FFF9C4"],
+      "textureVariants": ["standard", "adjustable", "pediatric"]
+    },
+    {
+      "id": "bed_2_piece",
+      "type": "bed",
+      "label": "Patient bed 2",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#E0E0E0", "#BBDEFB", "#C8E6C9", "#FFF9C4"],
+      "textureVariants": ["standard", "adjustable", "pediatric"]
+    },
+    {
+      "id": "window_1_piece",
+      "type": "window",
+      "label": "Left window",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#42A5F5", "#80DEEA", "#E1F5FE"],
+      "textureVariants": ["clear", "frosted", "tinted"]
+    },
+    {
+      "id": "window_2_piece",
+      "type": "window",
+      "label": "Right window",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#42A5F5", "#80DEEA", "#E1F5FE"],
+      "textureVariants": ["clear", "frosted", "tinted"]
+    }
+  ],
+
+  "bonusPieces": [
+    { "id": "wheelchair", "label": "Wheelchair", "probability": 0.4 },
+    { "id": "potted_plant", "label": "Waiting room plant", "probability": 0.5 },
+    { "id": "helicopter_pad", "label": "Helicopter pad", "probability": 0.3 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_07_cross_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 3, "y": 5 }, "tapsRequired": 5 },
+      "reward": { "type": "audio", "content": "Beep... beep... beep... A steady heartbeat fills the room. The hospital is alive!" },
+      "hint": "Tap the red cross sign five times"
+    },
+    {
+      "id": "ee_07_speed_badge",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 25 },
+      "reward": { "type": "visual", "content": "You earned the Surgeon Speed badge! Fastest hospital construction on record!" },
+      "hint": "Complete the hospital in under 25 seconds"
+    }
+  ]
+}

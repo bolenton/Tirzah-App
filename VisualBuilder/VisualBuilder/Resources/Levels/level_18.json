@@ -1,0 +1,125 @@
+{
+  "id": 18,
+  "name": "Build a Spaceship",
+  "description": "Assemble a mighty spaceship with hull, wings, engines, cockpit, and everything needed for interstellar travel",
+  "challengeTime": 45,
+  "gridSize": { "width": 9, "height": 7 },
+  "backgroundTheme": "outer_space",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "T-minus forty-five seconds and counting! Mission Control needs a spaceship, and you're the engineer. Hull, wings, engines, cockpit. Every piece is critical. This is not a drill!",
+        "voiceStyle": "nasa_countdown",
+        "rate": 0.46,
+        "pitchMultiplier": 0.88
+      },
+      {
+        "text": "Houston, we have a... spaceship to build! The launch window is closing fast. Assemble the hull, attach the wings, mount those engines, and don't forget the antenna or we'll lose contact!",
+        "voiceStyle": "nasa_countdown",
+        "rate": 0.47,
+        "pitchMultiplier": 0.85
+      },
+      {
+        "text": "All systems are GO for assembly! The stars are waiting, astronaut. Build this ship piece by piece and prepare for the greatest journey ever launched from a living room!",
+        "voiceStyle": "nasa_countdown",
+        "rate": 0.45,
+        "pitchMultiplier": 0.9
+      },
+      {
+        "text": "Attention flight crew! We need a spacecraft assembled before the launch window closes. Cockpit, hull, wings, engines, fuel, cargo. Every bolt matters when you're going to space!",
+        "voiceStyle": "nasa_countdown",
+        "rate": 0.44,
+        "pitchMultiplier": 0.87
+      }
+    ],
+    "progress": {
+      "25": ["Hull integrity at twenty-five percent! Keep building, engineer!", "The skeleton of the ship is forming. Looking good!"],
+      "50": ["We are halfway to launch! The ship is taking shape!", "Engines are being mounted! This bird is going to fly!"],
+      "75": ["Almost flight-ready! Final components going in!", "The stars are within reach! A few more pieces!"],
+      "100": ["All systems nominal! The spaceship is complete! Prepare for launch!", "Mission accomplished! That is one beautiful spacecraft, astronaut!"]
+    },
+    "tension": {
+      "50": ["The launch window is half closed! Build faster, engineer!", "Mission Control is getting nervous! Half the time is gone!"],
+      "25": ["Warning! Twenty-five percent fuel window remaining!", "The countdown is accelerating! Hurry, astronaut!"],
+      "10": ["T-minus ten! This is it! Place those final pieces!", "Critical time remaining! The rocket must launch NOW!"],
+      "expired": ["Launch window closed. Mission scrubbed. We'll try again tomorrow.", "Houston, we have a problem... the ship wasn't ready in time."]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "explorer",
+      "slots": [
+        { "id": "hull_front_slot", "position": { "x": 6, "y": 2 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "hull_front", "label": "Front hull" },
+        { "id": "hull_back_slot", "position": { "x": 2, "y": 2 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "hull_back", "label": "Rear hull" },
+        { "id": "wing_left_slot", "position": { "x": 3, "y": 0 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "wing", "label": "Left wing" },
+        { "id": "wing_right_slot", "position": { "x": 3, "y": 5 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "wing", "label": "Right wing" },
+        { "id": "engine_1_slot", "position": { "x": 0, "y": 2 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "engine", "label": "Port engine" },
+        { "id": "engine_2_slot", "position": { "x": 0, "y": 4 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "engine", "label": "Starboard engine" },
+        { "id": "cockpit_slot", "position": { "x": 8, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "cockpit", "label": "Cockpit" },
+        { "id": "fuel_tank_slot", "position": { "x": 4, "y": 2 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "fuel", "label": "Fuel tank" },
+        { "id": "cargo_bay_slot", "position": { "x": 4, "y": 4 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "cargo", "label": "Cargo bay" },
+        { "id": "antenna_slot", "position": { "x": 7, "y": 1 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "antenna", "label": "Communication antenna" }
+      ]
+    },
+    {
+      "variantId": "fighter",
+      "slots": [
+        { "id": "hull_front_slot", "position": { "x": 5, "y": 2 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "hull_front", "label": "Nose section" },
+        { "id": "hull_back_slot", "position": { "x": 1, "y": 2 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "hull_back", "label": "Engine section" },
+        { "id": "wing_left_slot", "position": { "x": 2, "y": 0 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "wing", "label": "Upper wing" },
+        { "id": "wing_right_slot", "position": { "x": 2, "y": 5 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "wing", "label": "Lower wing" },
+        { "id": "engine_1_slot", "position": { "x": 0, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "engine", "label": "Main thruster" },
+        { "id": "engine_2_slot", "position": { "x": 0, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "engine", "label": "Boost thruster" },
+        { "id": "cockpit_slot", "position": { "x": 7, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "cockpit", "label": "Pilot cockpit" },
+        { "id": "fuel_tank_slot", "position": { "x": 3, "y": 3 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "fuel", "label": "Fuel cell" },
+        { "id": "cargo_bay_slot", "position": { "x": 3, "y": 4 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "cargo", "label": "Supply bay" },
+        { "id": "antenna_slot", "position": { "x": 8, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "antenna", "label": "Sensor array" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    { "id": "hull_front", "type": "hull_front", "label": "Front hull section", "size": { "width": 2, "height": 3 }, "colorVariants": ["#B0BEC5", "#CFD8DC", "#ECEFF1", "#90A4AE"], "textureVariants": ["titanium", "carbon_fiber", "ceramic"] },
+    { "id": "hull_back", "type": "hull_back", "label": "Rear hull section", "size": { "width": 2, "height": 3 }, "colorVariants": ["#78909C", "#90A4AE", "#B0BEC5"], "textureVariants": ["titanium", "carbon_fiber", "ceramic"] },
+    { "id": "wing_left", "type": "wing", "label": "Left wing", "size": { "width": 3, "height": 2 }, "colorVariants": ["#546E7A", "#607D8B", "#78909C", "#90A4AE"], "textureVariants": ["swept", "delta", "straight"] },
+    { "id": "wing_right", "type": "wing", "label": "Right wing", "size": { "width": 3, "height": 2 }, "colorVariants": ["#546E7A", "#607D8B", "#78909C", "#90A4AE"], "textureVariants": ["swept", "delta", "straight"] },
+    { "id": "engine_1", "type": "engine", "label": "Port engine", "size": { "width": 2, "height": 1 }, "colorVariants": ["#FF6D00", "#FF9100", "#FFAB00"], "textureVariants": ["ion", "plasma", "chemical"] },
+    { "id": "engine_2", "type": "engine", "label": "Starboard engine", "size": { "width": 2, "height": 1 }, "colorVariants": ["#FF6D00", "#FF9100", "#FFAB00"], "textureVariants": ["ion", "plasma", "chemical"] },
+    { "id": "cockpit", "type": "cockpit", "label": "Cockpit module", "size": { "width": 1, "height": 1 }, "colorVariants": ["#40C4FF", "#00B0FF", "#0091EA", "#01579B"], "textureVariants": ["bubble", "angular", "streamlined"] },
+    { "id": "fuel_tank", "type": "fuel", "label": "Fuel tank", "size": { "width": 2, "height": 1 }, "colorVariants": ["#76FF03", "#64DD17", "#AEEA00"], "textureVariants": ["cylinder", "sphere", "pod"] },
+    { "id": "cargo_bay", "type": "cargo", "label": "Cargo bay", "size": { "width": 2, "height": 1 }, "colorVariants": ["#8D6E63", "#A1887F", "#BCAAA4", "#D7CCC8"], "textureVariants": ["reinforced", "standard", "pressurized"] },
+    { "id": "antenna", "type": "antenna", "label": "Communication antenna", "size": { "width": 1, "height": 1 }, "colorVariants": ["#FFD600", "#FFEA00", "#FDD835"], "textureVariants": ["dish", "array", "spike"] }
+  ],
+
+  "bonusPieces": [
+    { "id": "space_flag", "label": "Mission flag", "probability": 0.35 },
+    { "id": "robot_arm", "label": "Robotic arm", "probability": 0.3 },
+    { "id": "solar_panel", "label": "Solar panel", "probability": 0.4 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_18_liftoff",
+      "type": "tap",
+      "trigger": { "position": { "x": 0, "y": 2 }, "tapsRequired": 4 },
+      "reward": { "type": "audio", "content": "Three... two... one... LIFTOFF! We have liftoff! The engines roar and the ship rises into the heavens!" },
+      "hint": "Tap the engines four times"
+    },
+    {
+      "id": "ee_18_captain_badge",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 15 },
+      "reward": { "type": "narrative", "content": "Warp-speed assembly! You built that spaceship faster than light travels! Captain Badge earned!" },
+      "hint": "Complete the spaceship in under 15 seconds"
+    },
+    {
+      "id": "ee_18_cockpit_last",
+      "type": "sequence",
+      "trigger": { "pieceSequence": ["hull_front", "hull_back", "wing_left", "wing_right", "engine_1", "engine_2", "fuel_tank", "cargo_bay", "antenna", "cockpit"] },
+      "reward": { "type": "narrative", "content": "Ha! You built the entire spaceship and THEN added the cockpit! The pilot had to wait outside in space! Funny Astronaut Badge earned!" },
+      "hint": "Place the cockpit as the very last piece"
+    }
+  ]
+}

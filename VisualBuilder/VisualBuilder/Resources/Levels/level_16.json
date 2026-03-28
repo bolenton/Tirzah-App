@@ -1,0 +1,121 @@
+{
+  "id": 16,
+  "name": "Build an Airport",
+  "description": "Construct a bustling airport with runways, terminals, planes, and a control tower",
+  "challengeTime": 50,
+  "gridSize": { "width": 9, "height": 7 },
+  "backgroundTheme": "tarmac",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Good morning, passengers! This is your captain speaking. We have a slight problem... there's no airport! Time to build one from the ground up. Fasten your seatbelts!",
+        "voiceStyle": "pilot_captain",
+        "rate": 0.45,
+        "pitchMultiplier": 0.85
+      },
+      {
+        "text": "Tower to builder, tower to builder. We've got incoming flights and nowhere to land them. We need runways, terminals, the whole operation. You are cleared to construct!",
+        "voiceStyle": "pilot_captain",
+        "rate": 0.47,
+        "pitchMultiplier": 0.9
+      },
+      {
+        "text": "Attention all ground crew! We're building the finest airport this side of the clouds. Two runways, a terminal, gates, and planes ready to soar. Let's get this show off the ground!",
+        "voiceStyle": "pilot_captain",
+        "rate": 0.48,
+        "pitchMultiplier": 0.88
+      },
+      {
+        "text": "Welcome aboard Flight Build-It-One-Six! Our destination: the most amazing airport ever constructed. Estimated build time: as fast as your fingers can fly!",
+        "voiceStyle": "pilot_captain",
+        "rate": 0.46,
+        "pitchMultiplier": 0.92
+      }
+    ],
+    "progress": {
+      "25": ["The tarmac is taking shape! Runways are looking good!", "Ground crew reporting: foundation is solid!"],
+      "50": ["Halfway there, captain! The terminal is rising!", "We've got a real airport forming here!"],
+      "75": ["Almost ready for the first flight! Final pieces incoming!", "The planes are eager to taxi in!"],
+      "100": ["Airport is open for business! First flight departing now!", "Beautiful work, captain! Clear skies and smooth landings ahead!"]
+    },
+    "tension": {
+      "50": ["Flights are circling overhead! We need to hurry!", "Half the time gone and planes are waiting to land!"],
+      "25": ["Mayday, mayday! Time is running out, builder!", "Passengers are getting restless! Build faster!"],
+      "10": ["Final approach! Ten seconds to finish this airport!", "Emergency landing required! Place those last pieces NOW!"],
+      "expired": ["All flights diverted! The airport wasn't ready in time!", "Control tower is dark. We'll try again next time, captain."]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "international",
+      "slots": [
+        { "id": "runway_1_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 7, "height": 1 }, "acceptsPieceType": "runway", "label": "Main runway" },
+        { "id": "runway_2_slot", "position": { "x": 0, "y": 2 }, "size": { "width": 7, "height": 1 }, "acceptsPieceType": "runway", "label": "Secondary runway" },
+        { "id": "terminal_slot", "position": { "x": 2, "y": 3 }, "size": { "width": 5, "height": 2 }, "acceptsPieceType": "terminal", "label": "Terminal building" },
+        { "id": "plane_1_slot", "position": { "x": 7, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "plane", "label": "Plane at gate" },
+        { "id": "plane_2_slot", "position": { "x": 7, "y": 2 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "plane", "label": "Plane on runway" },
+        { "id": "control_tower_slot", "position": { "x": 0, "y": 4 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "tower", "label": "Control tower" },
+        { "id": "hangar_slot", "position": { "x": 1, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "hangar", "label": "Hangar" },
+        { "id": "parking_lot_slot", "position": { "x": 3, "y": 5 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "parking", "label": "Parking lot" },
+        { "id": "gate_1_slot", "position": { "x": 6, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "gate", "label": "Gate A" },
+        { "id": "gate_2_slot", "position": { "x": 6, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "gate", "label": "Gate B" },
+        { "id": "windsock_slot", "position": { "x": 8, "y": 6 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "windsock", "label": "Windsock" }
+      ]
+    },
+    {
+      "variantId": "regional",
+      "slots": [
+        { "id": "runway_1_slot", "position": { "x": 1, "y": 0 }, "size": { "width": 7, "height": 1 }, "acceptsPieceType": "runway", "label": "Main runway" },
+        { "id": "runway_2_slot", "position": { "x": 1, "y": 2 }, "size": { "width": 7, "height": 1 }, "acceptsPieceType": "runway", "label": "Taxi runway" },
+        { "id": "terminal_slot", "position": { "x": 3, "y": 3 }, "size": { "width": 5, "height": 2 }, "acceptsPieceType": "terminal", "label": "Terminal building" },
+        { "id": "plane_1_slot", "position": { "x": 1, "y": 1 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "plane", "label": "Plane taxiing" },
+        { "id": "plane_2_slot", "position": { "x": 8, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "plane", "label": "Plane departing" },
+        { "id": "control_tower_slot", "position": { "x": 0, "y": 3 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "tower", "label": "Control tower" },
+        { "id": "hangar_slot", "position": { "x": 1, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "hangar", "label": "Hangar" },
+        { "id": "parking_lot_slot", "position": { "x": 3, "y": 5 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "parking", "label": "Parking area" },
+        { "id": "gate_1_slot", "position": { "x": 7, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "gate", "label": "Gate 1" },
+        { "id": "gate_2_slot", "position": { "x": 7, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "gate", "label": "Gate 2" },
+        { "id": "windsock_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "windsock", "label": "Windsock" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    { "id": "runway_1", "type": "runway", "label": "Main runway", "size": { "width": 7, "height": 1 }, "colorVariants": ["#37474F", "#455A64", "#546E7A"], "textureVariants": ["asphalt", "concrete", "marked"] },
+    { "id": "runway_2", "type": "runway", "label": "Secondary runway", "size": { "width": 7, "height": 1 }, "colorVariants": ["#37474F", "#455A64", "#546E7A"], "textureVariants": ["asphalt", "concrete", "marked"] },
+    { "id": "terminal", "type": "terminal", "label": "Terminal building", "size": { "width": 5, "height": 2 }, "colorVariants": ["#ECEFF1", "#CFD8DC", "#B0BEC5", "#90A4AE"], "textureVariants": ["glass", "modern", "classic"] },
+    { "id": "plane_1", "type": "plane", "label": "Passenger plane", "size": { "width": 2, "height": 1 }, "colorVariants": ["#FFFFFF", "#E3F2FD", "#F5F5F5", "#E8EAF6"], "textureVariants": ["commercial", "private", "cargo"] },
+    { "id": "plane_2", "type": "plane", "label": "Cargo plane", "size": { "width": 2, "height": 1 }, "colorVariants": ["#FFFFFF", "#FFF3E0", "#F5F5F5", "#E0F2F1"], "textureVariants": ["commercial", "private", "cargo"] },
+    { "id": "control_tower", "type": "tower", "label": "Control tower", "size": { "width": 1, "height": 3 }, "colorVariants": ["#78909C", "#607D8B", "#546E7A", "#455A64"], "textureVariants": ["modern", "classic", "futuristic"] },
+    { "id": "hangar", "type": "hangar", "label": "Aircraft hangar", "size": { "width": 2, "height": 2 }, "colorVariants": ["#8D6E63", "#A1887F", "#BCAAA4", "#D7CCC8"], "textureVariants": ["metal", "corrugated", "industrial"] },
+    { "id": "parking_lot", "type": "parking", "label": "Parking lot", "size": { "width": 3, "height": 2 }, "colorVariants": ["#616161", "#757575", "#9E9E9E"], "textureVariants": ["paved", "lined", "multi_level"] },
+    { "id": "gate_1", "type": "gate", "label": "Gate A", "size": { "width": 1, "height": 1 }, "colorVariants": ["#1565C0", "#1976D2", "#1E88E5", "#2196F3"], "textureVariants": ["jetbridge", "stairs", "covered"] },
+    { "id": "gate_2", "type": "gate", "label": "Gate B", "size": { "width": 1, "height": 1 }, "colorVariants": ["#1565C0", "#1976D2", "#1E88E5", "#2196F3"], "textureVariants": ["jetbridge", "stairs", "covered"] },
+    { "id": "windsock", "type": "windsock", "label": "Windsock", "size": { "width": 1, "height": 1 }, "colorVariants": ["#FF5722", "#FF7043", "#FF8A65", "#FFAB91"], "textureVariants": ["striped", "solid", "neon"] }
+  ],
+
+  "bonusPieces": [
+    { "id": "luggage_cart", "label": "Luggage cart", "probability": 0.4 },
+    { "id": "fuel_truck", "label": "Fuel truck", "probability": 0.3 },
+    { "id": "radar_dish", "label": "Radar dish", "probability": 0.35 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_16_cleared_takeoff",
+      "type": "tap",
+      "trigger": { "position": { "x": 0, "y": 4 }, "tapsRequired": 4 },
+      "reward": { "type": "audio", "content": "Tower to all aircraft: You are cleared for takeoff! Blue skies and tailwinds, captain!" },
+      "hint": "Tap the control tower four times"
+    },
+    {
+      "id": "ee_16_pilot_badge",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 18 },
+      "reward": { "type": "narrative", "content": "Incredible speed, captain! You built that airport faster than a jet breaks the sound barrier! Pilot Badge earned!" },
+      "hint": "Complete the airport in under 18 seconds"
+    }
+  ]
+}

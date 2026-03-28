@@ -1,6 +1,74 @@
 {
   "version": "1.0",
-  "totalEasterEggs": 0,
-  "description": "Master catalog of all Easter eggs in Visual Builder. Updated as levels are created.",
-  "eggs": []
+  "totalEasterEggs": 52,
+  "description": "Master catalog of all Easter eggs in Visual Builder. Each level has 2-3 hidden Easter eggs.",
+  "eggs": [
+    { "id": "ee_01_chimney_tap", "levelId": 1, "type": "tap", "hint": "Tap above the roof three times", "rewardType": "audio", "rewardContent": "A tiny voice whispers: Is anyone home?" },
+    { "id": "ee_01_speed_demon", "levelId": 1, "type": "speed", "hint": "Complete the house in under 20 seconds", "rewardType": "visual", "rewardContent": "The house transforms into a gingerbread house!" },
+    { "id": "ee_01_backwards_build", "levelId": 1, "type": "sequence", "hint": "Build the house in reverse order", "rewardType": "narrative", "rewardContent": "Rebel Builder badge!" },
+
+    { "id": "ee_02_oven_tap", "levelId": 2, "type": "tap", "hint": "Tap the stove area five times", "rewardType": "audio", "rewardContent": "Ding! Your invisible cake is ready!" },
+    { "id": "ee_02_speed_chef", "levelId": 2, "type": "speed", "hint": "Complete the kitchen in under 25 seconds", "rewardType": "narrative", "rewardContent": "Master Chef badge!" },
+
+    { "id": "ee_03_gnome_hunt", "levelId": 3, "type": "tap", "hint": "Tap the far corner four times", "rewardType": "audio", "rewardContent": "Hidden garden gnome found!" },
+    { "id": "ee_03_green_thumb", "levelId": 3, "type": "speed", "hint": "Complete the garden in under 30 seconds", "rewardType": "visual", "rewardContent": "Green Thumb badge!" },
+
+    { "id": "ee_04_swing_tap", "levelId": 4, "type": "tap", "hint": "Tap above the swings six times", "rewardType": "audio", "rewardContent": "Children laughing on the swings!" },
+    { "id": "ee_04_lightning_build", "levelId": 4, "type": "speed", "hint": "Build playground in under 22 seconds", "rewardType": "narrative", "rewardContent": "Playground Champion badge!" },
+
+    { "id": "ee_05_bell_ring", "levelId": 5, "type": "tap", "hint": "Tap the top of the school three times", "rewardType": "audio", "rewardContent": "RING RING! School bell!" },
+    { "id": "ee_05_honor_roll", "levelId": 5, "type": "speed", "hint": "Complete school in under 20 seconds", "rewardType": "narrative", "rewardContent": "Straight A Builder badge!" },
+    { "id": "ee_05_bus_first", "levelId": 5, "type": "sequence", "hint": "Place the bus first", "rewardType": "narrative", "rewardContent": "Early Bird badge!" },
+
+    { "id": "ee_06_siren", "levelId": 6, "type": "tap", "hint": "Tap the fire pole four times", "rewardType": "audio", "rewardContent": "WEE-OO WEE-OO! Fire siren!" },
+    { "id": "ee_06_speed_rescue", "levelId": 6, "type": "speed", "hint": "Build station in under 25 seconds", "rewardType": "narrative", "rewardContent": "First Responder badge!" },
+
+    { "id": "ee_07_heartbeat", "levelId": 7, "type": "tap", "hint": "Tap the cross sign five times", "rewardType": "audio", "rewardContent": "Beep... beep... heartbeat monitor!" },
+    { "id": "ee_07_speed_doc", "levelId": 7, "type": "speed", "hint": "Build hospital in under 25 seconds", "rewardType": "narrative", "rewardContent": "Doctor Builder badge!" },
+
+    { "id": "ee_08_rooster", "levelId": 8, "type": "tap", "hint": "Tap the barn three times", "rewardType": "audio", "rewardContent": "Cock-a-doodle-doo!" },
+    { "id": "ee_08_speed_farmer", "levelId": 8, "type": "speed", "hint": "Build farm in under 28 seconds", "rewardType": "narrative", "rewardContent": "Farmer of the Year badge!" },
+    { "id": "ee_08_animals_first", "levelId": 8, "type": "sequence", "hint": "Place animals before the barn", "rewardType": "narrative", "rewardContent": "Where do they sleep? Nowhere! Free Range badge!" },
+
+    { "id": "ee_09_splash", "levelId": 9, "type": "tap", "hint": "Tap the lake four times", "rewardType": "audio", "rewardContent": "SPLASH! Something jumped in the lake!" },
+    { "id": "ee_09_speed_ranger", "levelId": 9, "type": "speed", "hint": "Build park in under 25 seconds", "rewardType": "narrative", "rewardContent": "Park Ranger badge!" },
+
+    { "id": "ee_10_roar", "levelId": 10, "type": "tap", "hint": "Tap the lion cage five times", "rewardType": "audio", "rewardContent": "ROAARRR! The lion is awake!" },
+    { "id": "ee_10_speed_keeper", "levelId": 10, "type": "speed", "hint": "Build zoo in under 25 seconds", "rewardType": "narrative", "rewardContent": "Zookeeper badge!" },
+    { "id": "ee_10_paths_first", "levelId": 10, "type": "sequence", "hint": "Place all paths before cages", "rewardType": "narrative", "rewardContent": "Safety First badge!" },
+
+    { "id": "ee_11_shh", "levelId": 11, "type": "tap", "hint": "Tap the desk three times", "rewardType": "audio", "rewardContent": "SHHHH! This is a library!" },
+    { "id": "ee_11_speed_reader", "levelId": 11, "type": "speed", "hint": "Build library in under 22 seconds", "rewardType": "narrative", "rewardContent": "Bookworm badge!" },
+
+    { "id": "ee_12_seagull", "levelId": 12, "type": "tap", "hint": "Tap the waves four times", "rewardType": "audio", "rewardContent": "Squawk! A seagull steals your sandwich!" },
+    { "id": "ee_12_speed_surfer", "levelId": 12, "type": "speed", "hint": "Build beach in under 22 seconds", "rewardType": "narrative", "rewardContent": "Beach Bum badge!" },
+
+    { "id": "ee_13_ghost", "levelId": 13, "type": "tap", "hint": "Tap both towers five times", "rewardType": "audio", "rewardContent": "OooOOOooo! A ghost haunts the castle!" },
+    { "id": "ee_13_speed_knight", "levelId": 13, "type": "speed", "hint": "Build castle in under 20 seconds", "rewardType": "narrative", "rewardContent": "Knight badge!" },
+    { "id": "ee_13_throne_first", "levelId": 13, "type": "sequence", "hint": "Place the throne before the walls", "rewardType": "narrative", "rewardContent": "Who needs walls when you have a throne? Royal Rebel badge!" },
+
+    { "id": "ee_14_whistle", "levelId": 14, "type": "tap", "hint": "Tap the clock tower three times", "rewardType": "audio", "rewardContent": "CHOO CHOO! All aboard!" },
+    { "id": "ee_14_speed_express", "levelId": 14, "type": "speed", "hint": "Build station in under 20 seconds", "rewardType": "narrative", "rewardContent": "Express badge!" },
+
+    { "id": "ee_15_alien", "levelId": 15, "type": "tap", "hint": "Tap the antenna four times", "rewardType": "audio", "rewardContent": "Bzzt... We come in peace... bzzt!" },
+    { "id": "ee_15_speed_astro", "levelId": 15, "type": "speed", "hint": "Build station in under 20 seconds", "rewardType": "narrative", "rewardContent": "Astronaut badge!" },
+    { "id": "ee_15_solar_first", "levelId": 15, "type": "sequence", "hint": "Place solar panels first", "rewardType": "narrative", "rewardContent": "Green Energy badge!" },
+
+    { "id": "ee_16_takeoff", "levelId": 16, "type": "tap", "hint": "Tap control tower four times", "rewardType": "audio", "rewardContent": "Cleared for takeoff! Roger that!" },
+    { "id": "ee_16_speed_pilot", "levelId": 16, "type": "speed", "hint": "Build airport in under 18 seconds", "rewardType": "narrative", "rewardContent": "Pilot badge!" },
+
+    { "id": "ee_17_whale", "levelId": 17, "type": "tap", "hint": "Tap the big tank five times", "rewardType": "audio", "rewardContent": "A whale song echoes through the aquarium!" },
+    { "id": "ee_17_speed_diver", "levelId": 17, "type": "speed", "hint": "Build aquarium in under 18 seconds", "rewardType": "narrative", "rewardContent": "Deep Diver badge!" },
+
+    { "id": "ee_18_liftoff", "levelId": 18, "type": "tap", "hint": "Tap the engines four times", "rewardType": "audio", "rewardContent": "3... 2... 1... LIFTOFF!" },
+    { "id": "ee_18_speed_captain", "levelId": 18, "type": "speed", "hint": "Build spaceship in under 15 seconds", "rewardType": "narrative", "rewardContent": "Captain badge!" },
+    { "id": "ee_18_cockpit_last", "levelId": 18, "type": "sequence", "hint": "Place the cockpit last", "rewardType": "narrative", "rewardContent": "The pilot arrives last! Fashionably Late badge!" },
+
+    { "id": "ee_19_horn", "levelId": 19, "type": "tap", "hint": "Tap the stop sign three times", "rewardType": "audio", "rewardContent": "HONK HONK! Traffic jam in your town!" },
+    { "id": "ee_19_speed_mayor", "levelId": 19, "type": "speed", "hint": "Build town in under 15 seconds", "rewardType": "narrative", "rewardContent": "Mayor badge!" },
+
+    { "id": "ee_20_fireworks", "levelId": 20, "type": "tap", "hint": "Tap the monument five times", "rewardType": "visual", "rewardContent": "BOOM! Fireworks light up the city sky!" },
+    { "id": "ee_20_speed_master", "levelId": 20, "type": "speed", "hint": "Build city in under 15 seconds", "rewardType": "narrative", "rewardContent": "Master Builder Supreme badge!" },
+    { "id": "ee_20_buildings_first", "levelId": 20, "type": "sequence", "hint": "Place all buildings before roads", "rewardType": "narrative", "rewardContent": "Who needs infrastructure? Architect badge!" }
+  ]
 }

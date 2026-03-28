@@ -1,0 +1,182 @@
+{
+  "id": 6,
+  "name": "Build a Fire Station",
+  "description": "Build a fire station with a truck, ladder, and all the gear heroes need to save the day!",
+  "challengeTime": 90,
+  "gridSize": { "width": 7, "height": 6 },
+  "backgroundTheme": "city_emergency",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Attention all units! We need a fire station built on the double! Get that building up, park the truck, and hang the ladder. Lives depend on it, builder!",
+        "voiceStyle": "urgent_dispatcher",
+        "rate": 0.52,
+        "pitchMultiplier": 1.1
+      },
+      {
+        "text": "Dispatch calling! We've got a brand new fire crew but nowhere to park the truck. Can you build them a station before the next call comes in?",
+        "voiceStyle": "urgent_dispatcher",
+        "rate": 0.5,
+        "pitchMultiplier": 1.05
+      },
+      {
+        "text": "All hands on deck, builder! This town needs a fire station and you're the one to build it. Truck bay, alarm bell, the whole works. Let's move!",
+        "voiceStyle": "urgent_dispatcher",
+        "rate": 0.48,
+        "pitchMultiplier": 1.0
+      },
+      {
+        "text": "Code red, code red! No fire station in this neighborhood! Quick, grab those pieces and build the bravest station this town has ever seen!",
+        "voiceStyle": "urgent_dispatcher",
+        "rate": 0.53,
+        "pitchMultiplier": 1.15
+      }
+    ],
+    "progress": {
+      "25": [
+        "First pieces in place! The station is taking shape, keep going!",
+        "Good work, recruit! The foundation looks solid!"
+      ],
+      "50": [
+        "Halfway there! The crew is getting excited to move in!",
+        "Looking great! I can already picture the truck pulling out!"
+      ],
+      "75": [
+        "Almost finished! Just a few more pieces and we're ready to respond!",
+        "Nearly done! The firefighters are suiting up already!"
+      ],
+      "100": [
+        "Station complete! The bravest firehouse in town, thanks to you!",
+        "All units, the new fire station is open for business! Outstanding work!"
+      ]
+    },
+    "tension": {
+      "50": [
+        "Half the time gone, builder! Keep those pieces moving!",
+        "Clock's ticking! The fire crew needs their station!"
+      ],
+      "25": [
+        "Time is running out! Faster, faster, builder!",
+        "Only a quarter of the time left! Pick up the pace!"
+      ],
+      "10": [
+        "Emergency! Almost out of time! Hurry!",
+        "Ten seconds! Drop everything and finish that station!"
+      ],
+      "expired": [
+        "Time's up! The crew will have to wait a bit longer.",
+        "Dispatch signing off. We ran out of time, but don't give up!"
+      ]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "classic_station",
+      "slots": [
+        { "id": "building_base_slot", "position": { "x": 1, "y": 0 }, "size": { "width": 5, "height": 2 }, "acceptsPieceType": "building_base", "label": "Station base" },
+        { "id": "building_top_slot", "position": { "x": 1, "y": 2 }, "size": { "width": 5, "height": 2 }, "acceptsPieceType": "building_top", "label": "Station upper floor" },
+        { "id": "garage_door_slot", "position": { "x": 2, "y": 0 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "garage_door", "label": "Garage door" },
+        { "id": "truck_slot", "position": { "x": 2, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "truck", "label": "Fire truck" },
+        { "id": "ladder_slot", "position": { "x": 5, "y": 1 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "ladder", "label": "Ladder" },
+        { "id": "pole_slot", "position": { "x": 4, "y": 1 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "pole", "label": "Fire pole" },
+        { "id": "alarm_bell_slot", "position": { "x": 3, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "alarm_bell", "label": "Alarm bell" }
+      ]
+    },
+    {
+      "variantId": "wide_station",
+      "slots": [
+        { "id": "building_base_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 7, "height": 2 }, "acceptsPieceType": "building_base", "label": "Station base" },
+        { "id": "building_top_slot", "position": { "x": 0, "y": 2 }, "size": { "width": 7, "height": 2 }, "acceptsPieceType": "building_top", "label": "Station upper floor" },
+        { "id": "garage_door_slot", "position": { "x": 1, "y": 0 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "garage_door", "label": "Garage door" },
+        { "id": "truck_slot", "position": { "x": 1, "y": 0 }, "size": { "width": 3, "height": 1 }, "acceptsPieceType": "truck", "label": "Fire truck" },
+        { "id": "ladder_slot", "position": { "x": 6, "y": 1 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "ladder", "label": "Ladder" },
+        { "id": "pole_slot", "position": { "x": 5, "y": 1 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "pole", "label": "Fire pole" },
+        { "id": "alarm_bell_slot", "position": { "x": 3, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "alarm_bell", "label": "Alarm bell" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    {
+      "id": "truck_piece",
+      "type": "truck",
+      "label": "Fire truck",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#D32F2F", "#FF5722", "#E53935"],
+      "textureVariants": ["glossy", "matte", "metallic"]
+    },
+    {
+      "id": "ladder_piece",
+      "type": "ladder",
+      "label": "Extension ladder",
+      "size": { "width": 1, "height": 3 },
+      "colorVariants": ["#C0C0C0", "#FFD600", "#B0BEC5"],
+      "textureVariants": ["aluminum", "steel", "painted"]
+    },
+    {
+      "id": "pole_piece",
+      "type": "pole",
+      "label": "Fire pole",
+      "size": { "width": 1, "height": 3 },
+      "colorVariants": ["#FFD700", "#C0C0C0", "#CD7F32", "#B0BEC5"],
+      "textureVariants": ["brass", "chrome", "steel"]
+    },
+    {
+      "id": "building_base_piece",
+      "type": "building_base",
+      "label": "Station base",
+      "size": { "width": 5, "height": 2 },
+      "colorVariants": ["#B71C1C", "#8B0000", "#C62828", "#D32F2F"],
+      "textureVariants": ["brick", "concrete", "stucco"]
+    },
+    {
+      "id": "building_top_piece",
+      "type": "building_top",
+      "label": "Station upper floor",
+      "size": { "width": 5, "height": 2 },
+      "colorVariants": ["#B71C1C", "#8B0000", "#C62828", "#D32F2F"],
+      "textureVariants": ["brick", "concrete", "stucco"]
+    },
+    {
+      "id": "garage_door_piece",
+      "type": "garage_door",
+      "label": "Garage door",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#FFFFFF", "#E0E0E0", "#BDBDBD"],
+      "textureVariants": ["rollup", "sectional", "glass"]
+    },
+    {
+      "id": "alarm_bell_piece",
+      "type": "alarm_bell",
+      "label": "Alarm bell",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#FFD700", "#FF6F00", "#FFC107", "#FFAB00"],
+      "textureVariants": ["brass", "chrome", "antique"]
+    }
+  ],
+
+  "bonusPieces": [
+    { "id": "dalmatian", "label": "Dalmatian mascot", "probability": 0.4 },
+    { "id": "fire_hydrant", "label": "Fire hydrant", "probability": 0.5 },
+    { "id": "flag", "label": "Station flag", "probability": 0.3 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_06_pole_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 4, "y": 2 }, "tapsRequired": 4 },
+      "reward": { "type": "audio", "content": "WEEE-OOOO WEEE-OOOO! The fire siren blares and the dalmatian howls along!" },
+      "hint": "Tap the fire pole four times"
+    },
+    {
+      "id": "ee_06_speed_badge",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 25 },
+      "reward": { "type": "visual", "content": "You earned the Golden Helmet badge! Fastest builder in the department!" },
+      "hint": "Complete the fire station in under 25 seconds"
+    }
+  ]
+}

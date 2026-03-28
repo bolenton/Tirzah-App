@@ -1,0 +1,219 @@
+{
+  "id": 10,
+  "name": "Build a Zoo",
+  "description": "Build an amazing zoo with animal habitats, a gift shop, and paths for visitors to explore. The animals are waiting!",
+  "challengeTime": 70,
+  "gridSize": { "width": 8, "height": 8 },
+  "backgroundTheme": "wildlife_safari",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Jambo, builder! Welcome to the wildest challenge yet! We need a full zoo with habitats for lions, monkeys, birds, and reptiles. The animals are ready, are you?",
+        "voiceStyle": "safari_guide",
+        "rate": 0.5,
+        "pitchMultiplier": 1.1
+      },
+      {
+        "text": "Right then, explorer! The trucks have arrived with all the building materials and the animals are in their travel crates. Let's build them a world-class zoo!",
+        "voiceStyle": "safari_guide",
+        "rate": 0.48,
+        "pitchMultiplier": 1.05
+      },
+      {
+        "text": "Look alive, builder! Lions, monkeys, birds, reptiles, they all need a home. And the visitors need paths, benches, and a gift shop. Can you build it all in time?",
+        "voiceStyle": "safari_guide",
+        "rate": 0.52,
+        "pitchMultiplier": 1.0
+      },
+      {
+        "text": "Welcome to zoo construction, the ultimate building challenge! Ten pieces, one incredible zoo. Place each habitat with care and don't forget the entrance gate!",
+        "voiceStyle": "safari_guide",
+        "rate": 0.45,
+        "pitchMultiplier": 0.95
+      }
+    ],
+    "progress": {
+      "25": [
+        "Brilliant start! The zoo is beginning to take shape!",
+        "The entrance is looking grand! Keep those pieces coming!"
+      ],
+      "50": [
+        "Halfway there! The monkeys are already swinging with excitement!",
+        "Fantastic progress! The visitors are lining up outside!"
+      ],
+      "75": [
+        "Almost done! Just a few more habitats to place!",
+        "Nearly there! The lions can practically smell their new home!"
+      ],
+      "100": [
+        "The zoo is OPEN! What a magnificent animal kingdom you've built!",
+        "Spectacular work, builder! This is the finest zoo in the land!"
+      ]
+    },
+    "tension": {
+      "50": [
+        "Half your time is gone! The animals are getting restless!",
+        "Keep moving, builder! The visitors won't wait forever!"
+      ],
+      "25": [
+        "Time is running out! The gift shop still needs stocking!",
+        "Hurry! The animals need their homes before closing time!"
+      ],
+      "10": [
+        "Last seconds! Quick, finish the zoo!",
+        "The gates close in moments! Rush those final pieces in!"
+      ],
+      "expired": [
+        "Time's up! The animals will have to camp out tonight. Try again, explorer!",
+        "Oh no, closing time! The zoo isn't quite finished. Give it another go!"
+      ]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "classic_zoo",
+      "slots": [
+        { "id": "entrance_gate_slot", "position": { "x": 3, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "entrance_gate", "label": "Zoo entrance gate" },
+        { "id": "lion_cage_slot", "position": { "x": 0, "y": 2 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "lion_cage", "label": "Lion habitat" },
+        { "id": "monkey_area_slot", "position": { "x": 5, "y": 2 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "monkey_area", "label": "Monkey area" },
+        { "id": "bird_aviary_slot", "position": { "x": 0, "y": 5 }, "size": { "width": 3, "height": 3 }, "acceptsPieceType": "bird_aviary", "label": "Bird aviary" },
+        { "id": "reptile_house_slot", "position": { "x": 5, "y": 5 }, "size": { "width": 3, "height": 3 }, "acceptsPieceType": "reptile_house", "label": "Reptile house" },
+        { "id": "gift_shop_slot", "position": { "x": 6, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "gift_shop", "label": "Gift shop" },
+        { "id": "path_1_slot", "position": { "x": 0, "y": 1 }, "size": { "width": 8, "height": 1 }, "acceptsPieceType": "path", "label": "Main path" },
+        { "id": "path_2_slot", "position": { "x": 3, "y": 4 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "path", "label": "Connecting path" },
+        { "id": "bench_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "bench", "label": "Visitor bench" },
+        { "id": "info_sign_slot", "position": { "x": 3, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "info_sign", "label": "Information sign" }
+      ]
+    },
+    {
+      "variantId": "circular_zoo",
+      "slots": [
+        { "id": "entrance_gate_slot", "position": { "x": 3, "y": 7 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "entrance_gate", "label": "Zoo entrance gate" },
+        { "id": "lion_cage_slot", "position": { "x": 0, "y": 4 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "lion_cage", "label": "Lion habitat" },
+        { "id": "monkey_area_slot", "position": { "x": 5, "y": 4 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "monkey_area", "label": "Monkey area" },
+        { "id": "bird_aviary_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 3, "height": 3 }, "acceptsPieceType": "bird_aviary", "label": "Bird aviary" },
+        { "id": "reptile_house_slot", "position": { "x": 5, "y": 0 }, "size": { "width": 3, "height": 3 }, "acceptsPieceType": "reptile_house", "label": "Reptile house" },
+        { "id": "gift_shop_slot", "position": { "x": 0, "y": 7 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "gift_shop", "label": "Gift shop" },
+        { "id": "path_1_slot", "position": { "x": 0, "y": 3 }, "size": { "width": 8, "height": 1 }, "acceptsPieceType": "path", "label": "Main path" },
+        { "id": "path_2_slot", "position": { "x": 3, "y": 6 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "path", "label": "Entrance path" },
+        { "id": "bench_slot", "position": { "x": 6, "y": 7 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "bench", "label": "Visitor bench" },
+        { "id": "info_sign_slot", "position": { "x": 4, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "info_sign", "label": "Information sign" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    {
+      "id": "entrance_gate_piece",
+      "type": "entrance_gate",
+      "label": "Zoo entrance gate",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#6D4C41", "#8D6E63", "#4E342E", "#3E2723"],
+      "textureVariants": ["wooden_arch", "stone_pillars", "modern"]
+    },
+    {
+      "id": "lion_cage_piece",
+      "type": "lion_cage",
+      "label": "Lion habitat",
+      "size": { "width": 3, "height": 2 },
+      "colorVariants": ["#FFA726", "#FFB74D", "#FF9800"],
+      "textureVariants": ["savanna", "rocky", "grassland"]
+    },
+    {
+      "id": "monkey_area_piece",
+      "type": "monkey_area",
+      "label": "Monkey play area",
+      "size": { "width": 3, "height": 2 },
+      "colorVariants": ["#66BB6A", "#81C784", "#4CAF50"],
+      "textureVariants": ["jungle", "tropical", "canopy"]
+    },
+    {
+      "id": "bird_aviary_piece",
+      "type": "bird_aviary",
+      "label": "Bird aviary",
+      "size": { "width": 3, "height": 3 },
+      "colorVariants": ["#42A5F5", "#64B5F6", "#90CAF9", "#BBDEFB"],
+      "textureVariants": ["mesh_dome", "glass_house", "open_air"]
+    },
+    {
+      "id": "reptile_house_piece",
+      "type": "reptile_house",
+      "label": "Reptile house",
+      "size": { "width": 3, "height": 3 },
+      "colorVariants": ["#558B2F", "#33691E", "#689F38"],
+      "textureVariants": ["tropical", "desert", "swamp"]
+    },
+    {
+      "id": "gift_shop_piece",
+      "type": "gift_shop",
+      "label": "Gift shop",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#AB47BC", "#CE93D8", "#8E24AA", "#E1BEE7"],
+      "textureVariants": ["colorful", "rustic", "modern"]
+    },
+    {
+      "id": "path_1_piece",
+      "type": "path",
+      "label": "Main visitor path",
+      "size": { "width": 8, "height": 1 },
+      "colorVariants": ["#D7CCC8", "#BCAAA4", "#8D6E63"],
+      "textureVariants": ["cobblestone", "gravel", "paved"]
+    },
+    {
+      "id": "path_2_piece",
+      "type": "path",
+      "label": "Connecting path",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#D7CCC8", "#BCAAA4", "#8D6E63"],
+      "textureVariants": ["cobblestone", "gravel", "paved"]
+    },
+    {
+      "id": "bench_piece",
+      "type": "bench",
+      "label": "Visitor bench",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#5D4037", "#795548", "#4E342E"],
+      "textureVariants": ["wooden", "iron", "bamboo"]
+    },
+    {
+      "id": "info_sign_piece",
+      "type": "info_sign",
+      "label": "Information sign",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#1565C0", "#1976D2", "#0D47A1", "#42A5F5"],
+      "textureVariants": ["wooden_post", "digital", "carved"]
+    }
+  ],
+
+  "bonusPieces": [
+    { "id": "balloon_cart", "label": "Balloon cart", "probability": 0.5 },
+    { "id": "ice_cream_stand", "label": "Ice cream stand", "probability": 0.4 },
+    { "id": "zoo_train", "label": "Zoo train", "probability": 0.3 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_10_lion_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 1, "y": 3 }, "tapsRequired": 5 },
+      "reward": { "type": "audio", "content": "ROAAAARR! The lion lets out a mighty roar that shakes the whole zoo! The monkeys go silent for exactly one second." },
+      "hint": "Tap the lion habitat five times"
+    },
+    {
+      "id": "ee_10_speed_badge",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 25 },
+      "reward": { "type": "visual", "content": "You earned the Zookeeper Supreme badge! You built that zoo faster than a cheetah runs!" },
+      "hint": "Complete the zoo in under 25 seconds"
+    },
+    {
+      "id": "ee_10_paths_first",
+      "type": "sequence",
+      "trigger": { "pieceSequence": ["path_1_piece", "path_2_piece", "lion_cage_piece", "monkey_area_piece", "bird_aviary_piece", "reptile_house_piece"] },
+      "reward": { "type": "visual", "content": "You built all the paths before any cages? Smart thinking! The Master Planner badge is yours!" },
+      "hint": "Place both paths before placing any animal habitats"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": 20,
+  "name": "Build a City",
+  "description": "The ultimate challenge! Construct a magnificent city with skyscrapers, a bridge, parks, transit, offices, and iconic landmarks",
+  "challengeTime": 35,
+  "gridSize": { "width": 10, "height": 8 },
+  "backgroundTheme": "skyline_sunset",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "In a world where only the greatest builders survive... one child stands at the edge of destiny. Fourteen pieces. Thirty-five seconds. One city to rule them all. THIS... is the FINAL LEVEL!",
+        "voiceStyle": "epic_movie_trailer",
+        "rate": 0.42,
+        "pitchMultiplier": 0.78
+      },
+      {
+        "text": "Every level has led to THIS moment. Every house, every rocket, every airport was just practice. Now you face the ultimate test: build an entire CITY from nothing. Skyscrapers that pierce the clouds. A bridge that spans the impossible. You were BORN for this!",
+        "voiceStyle": "epic_movie_trailer",
+        "rate": 0.40,
+        "pitchMultiplier": 0.75
+      },
+      {
+        "text": "The ground trembles. The sky darkens with anticipation. Fourteen monumental pieces await your command. Schools, hospitals, stadiums, towers of glass and steel! Only a TRUE Master Builder can complete this challenge. Are you ready for GREATNESS?!",
+        "voiceStyle": "epic_movie_trailer",
+        "rate": 0.43,
+        "pitchMultiplier": 0.8
+      },
+      {
+        "text": "They said it couldn't be done. They said no builder could construct an entire city in thirty-five seconds. But they never met YOU. Rise, Master Builder! Your city... your LEGEND... begins NOW!",
+        "voiceStyle": "epic_movie_trailer",
+        "rate": 0.41,
+        "pitchMultiplier": 0.76
+      }
+    ],
+    "progress": {
+      "25": ["The foundations of greatness are being laid! The city rises!", "A quarter of your destiny is complete! The skyline begins to glow!"],
+      "50": ["HALFWAY TO GLORY! The city is alive with steel and stone!", "The bridge connects, the towers climb! You are UNSTOPPABLE!"],
+      "75": ["The city is ALMOST COMPLETE! The world watches in awe!", "Three quarters done! Legends are being written about your speed!"],
+      "100": ["THE CITY IS COMPLETE! Fireworks light the sky! Trumpets sound! You are the ULTIMATE MASTER BUILDER! Every level, every challenge has led to this TRIUMPH!", "MAGNIFICENT! SPECTACULAR! EXTRAORDINARY! You have built a CITY! The greatest achievement in the history of building! Take a bow, Master Builder. You have CONQUERED the Visual Builder!"]
+    },
+    "tension": {
+      "50": ["Half the time has fallen like sand through an hourglass! Build FASTER!", "The clock is your enemy! Seventeen seconds and a city to finish! GO!"],
+      "25": ["TIME IS CRUMBLING! The city needs its hero! PLACE THOSE PIECES!", "This is your FINAL STAND! Eight seconds! The city MUST rise!"],
+      "10": ["TEN SECONDS TO DESTINY! Every moment counts! BUILD! BUILD! BUILD!", "The FINAL COUNTDOWN! The whole world holds its breath!"],
+      "expired": ["The sun sets on an unfinished city. But even the greatest builders sometimes need a second chance. Rise again, challenger!", "Time has run out on this chapter... but your story is NOT over. Return, and claim your rightful place as Master Builder!"]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "metropolis",
+      "slots": [
+        { "id": "skyscraper_1_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 1, "height": 4 }, "acceptsPieceType": "skyscraper", "label": "Tower One" },
+        { "id": "skyscraper_2_slot", "position": { "x": 1, "y": 1 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "skyscraper", "label": "Tower Two" },
+        { "id": "skyscraper_3_slot", "position": { "x": 2, "y": 0 }, "size": { "width": 1, "height": 4 }, "acceptsPieceType": "skyscraper", "label": "Tower Three" },
+        { "id": "bridge_slot", "position": { "x": 3, "y": 3 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "bridge", "label": "Grand bridge" },
+        { "id": "park_slot", "position": { "x": 3, "y": 0 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "park", "label": "Central park" },
+        { "id": "subway_entrance_slot", "position": { "x": 5, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "subway", "label": "Subway entrance" },
+        { "id": "bus_slot", "position": { "x": 3, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "transit", "label": "City bus" },
+        { "id": "taxi_slot", "position": { "x": 4, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "transit", "label": "City taxi" },
+        { "id": "office_1_slot", "position": { "x": 7, "y": 0 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "office", "label": "Office tower A" },
+        { "id": "office_2_slot", "position": { "x": 7, "y": 2 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "office", "label": "Office tower B" },
+        { "id": "monument_slot", "position": { "x": 5, "y": 1 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "monument", "label": "City monument" },
+        { "id": "hospital_slot", "position": { "x": 0, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "hospital", "label": "City hospital" },
+        { "id": "school_slot", "position": { "x": 2, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "school", "label": "City school" },
+        { "id": "stadium_slot", "position": { "x": 4, "y": 4 }, "size": { "width": 3, "height": 3 }, "acceptsPieceType": "stadium", "label": "Grand stadium" }
+      ]
+    },
+    {
+      "variantId": "coastal",
+      "slots": [
+        { "id": "skyscraper_1_slot", "position": { "x": 3, "y": 0 }, "size": { "width": 1, "height": 4 }, "acceptsPieceType": "skyscraper", "label": "Skyline tower" },
+        { "id": "skyscraper_2_slot", "position": { "x": 4, "y": 1 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "skyscraper", "label": "Harbor tower" },
+        { "id": "skyscraper_3_slot", "position": { "x": 5, "y": 0 }, "size": { "width": 1, "height": 4 }, "acceptsPieceType": "skyscraper", "label": "Beacon tower" },
+        { "id": "bridge_slot", "position": { "x": 0, "y": 3 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "bridge", "label": "Harbor bridge" },
+        { "id": "park_slot", "position": { "x": 6, "y": 0 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "park", "label": "Waterfront park" },
+        { "id": "subway_entrance_slot", "position": { "x": 8, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "subway", "label": "Metro entrance" },
+        { "id": "bus_slot", "position": { "x": 6, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "transit", "label": "Bus line" },
+        { "id": "taxi_slot", "position": { "x": 7, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "transit", "label": "Taxi stand" },
+        { "id": "office_1_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "office", "label": "Commerce building" },
+        { "id": "office_2_slot", "position": { "x": 0, "y": 2 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "office", "label": "Trade center" },
+        { "id": "monument_slot", "position": { "x": 8, "y": 1 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "monument", "label": "Coastal monument" },
+        { "id": "hospital_slot", "position": { "x": 6, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "hospital", "label": "General hospital" },
+        { "id": "school_slot", "position": { "x": 8, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "school", "label": "Academy" },
+        { "id": "stadium_slot", "position": { "x": 2, "y": 4 }, "size": { "width": 3, "height": 3 }, "acceptsPieceType": "stadium", "label": "Olympic stadium" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    { "id": "skyscraper_1", "type": "skyscraper", "label": "Glass skyscraper", "size": { "width": 1, "height": 4 }, "colorVariants": ["#90CAF9", "#64B5F6", "#42A5F5", "#2196F3"], "textureVariants": ["glass", "steel", "mirror"] },
+    { "id": "skyscraper_2", "type": "skyscraper", "label": "Steel skyscraper", "size": { "width": 1, "height": 3 }, "colorVariants": ["#B0BEC5", "#90A4AE", "#78909C", "#607D8B"], "textureVariants": ["glass", "steel", "mirror"] },
+    { "id": "skyscraper_3", "type": "skyscraper", "label": "Modern skyscraper", "size": { "width": 1, "height": 4 }, "colorVariants": ["#CE93D8", "#BA68C8", "#AB47BC", "#9C27B0"], "textureVariants": ["glass", "steel", "futuristic"] },
+    { "id": "bridge", "type": "bridge", "label": "Grand bridge", "size": { "width": 4, "height": 1 }, "colorVariants": ["#FF8A65", "#FF7043", "#FF5722"], "textureVariants": ["suspension", "arch", "cable_stayed"] },
+    { "id": "park", "type": "park", "label": "Central park", "size": { "width": 2, "height": 2 }, "colorVariants": ["#66BB6A", "#4CAF50", "#43A047", "#388E3C"], "textureVariants": ["garden", "forest", "manicured"] },
+    { "id": "subway_entrance", "type": "subway", "label": "Subway entrance", "size": { "width": 1, "height": 1 }, "colorVariants": ["#FFA726", "#FF9800", "#FB8C00"], "textureVariants": ["art_deco", "modern", "classic"] },
+    { "id": "bus", "type": "transit", "label": "City bus", "size": { "width": 1, "height": 1 }, "colorVariants": ["#29B6F6", "#03A9F4", "#039BE5", "#0288D1"], "textureVariants": ["double_decker", "articulated", "standard"] },
+    { "id": "taxi", "type": "transit", "label": "Yellow taxi", "size": { "width": 1, "height": 1 }, "colorVariants": ["#FFEE58", "#FDD835", "#FBC02D", "#F9A825"], "textureVariants": ["classic", "modern", "minivan"] },
+    { "id": "office_1", "type": "office", "label": "Office tower A", "size": { "width": 2, "height": 2 }, "colorVariants": ["#E0E0E0", "#BDBDBD", "#9E9E9E", "#757575"], "textureVariants": ["corporate", "startup", "classic"] },
+    { "id": "office_2", "type": "office", "label": "Office tower B", "size": { "width": 2, "height": 2 }, "colorVariants": ["#BCAAA4", "#A1887F", "#8D6E63", "#795548"], "textureVariants": ["corporate", "startup", "classic"] },
+    { "id": "monument", "type": "monument", "label": "City monument", "size": { "width": 2, "height": 2 }, "colorVariants": ["#FFD54F", "#FFC107", "#FFB300", "#FFA000"], "textureVariants": ["statue", "obelisk", "fountain"] },
+    { "id": "hospital", "type": "hospital", "label": "City hospital", "size": { "width": 2, "height": 2 }, "colorVariants": ["#EF9A9A", "#E57373", "#EF5350", "#F44336"], "textureVariants": ["modern", "classic", "research"] },
+    { "id": "school", "type": "school", "label": "City school", "size": { "width": 2, "height": 2 }, "colorVariants": ["#A5D6A7", "#81C784", "#66BB6A", "#4CAF50"], "textureVariants": ["elementary", "high_school", "academy"] },
+    { "id": "stadium", "type": "stadium", "label": "Grand stadium", "size": { "width": 3, "height": 3 }, "colorVariants": ["#7986CB", "#5C6BC0", "#3F51B5", "#3949AB"], "textureVariants": ["open_air", "domed", "retractable"] }
+  ],
+
+  "bonusPieces": [
+    { "id": "helicopter", "label": "News helicopter", "probability": 0.3 },
+    { "id": "fountain", "label": "City fountain", "probability": 0.35 },
+    { "id": "clock_tower", "label": "Clock tower", "probability": 0.25 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_20_fireworks",
+      "type": "tap",
+      "trigger": { "position": { "x": 5, "y": 1 }, "tapsRequired": 5 },
+      "reward": { "type": "audio", "content": "BOOM! CRACKLE! POP! Spectacular fireworks explode above the city monument! The whole skyline lights up in celebration of the ULTIMATE BUILDER!" },
+      "hint": "Tap the city monument five times"
+    },
+    {
+      "id": "ee_20_master_builder_supreme",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 15 },
+      "reward": { "type": "narrative", "content": "IMPOSSIBLE! UNBELIEVABLE! LEGENDARY! You built an entire CITY in under fifteen seconds! The world has never seen anything like it! MASTER BUILDER SUPREME Badge earned! You are a building GOD!" },
+      "hint": "Complete the entire city in under 15 seconds"
+    },
+    {
+      "id": "ee_20_architect",
+      "type": "sequence",
+      "trigger": { "pieceSequence": ["skyscraper_1", "skyscraper_2", "skyscraper_3", "office_1", "office_2", "hospital", "school", "stadium", "monument", "park", "subway_entrance", "bus", "taxi", "bridge"] },
+      "reward": { "type": "narrative", "content": "Genius! You placed every building before laying a single road or transit line! A true architectural visionary! The city planners bow before your wisdom! Architect Badge earned!" },
+      "hint": "Place all buildings before roads and transit"
+    }
+  ]
+}

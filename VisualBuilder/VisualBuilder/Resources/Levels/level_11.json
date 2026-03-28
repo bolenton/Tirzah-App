@@ -1,0 +1,192 @@
+{
+  "id": 11,
+  "name": "Build a Library",
+  "description": "Stack the shelves, set up the desk, and create a quiet reading paradise",
+  "challengeTime": 65,
+  "gridSize": { "width": 8, "height": 6 },
+  "backgroundTheme": "indoor_cozy",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Shhh... welcome to the quietest challenge yet. Can you build a library so perfect that even the books will be impressed? Place the shelves, the desk, and every piece with care.",
+        "voiceStyle": "whispering_librarian",
+        "rate": 0.42,
+        "pitchMultiplier": 0.9
+      },
+      {
+        "text": "A world of stories awaits, but first we need somewhere to keep them all. Build this library shelf by shelf, and do try to keep the noise down.",
+        "voiceStyle": "whispering_librarian",
+        "rate": 0.44,
+        "pitchMultiplier": 0.92
+      },
+      {
+        "text": "Every great library starts with a single shelf. Today you will build an entire reading room. Quietly now, the readers are watching.",
+        "voiceStyle": "whispering_librarian",
+        "rate": 0.4,
+        "pitchMultiplier": 0.88
+      },
+      {
+        "text": "Books, shelves, a cozy reading lamp... this library won't build itself. But remember the golden rule: no loud noises!",
+        "voiceStyle": "whispering_librarian",
+        "rate": 0.46,
+        "pitchMultiplier": 0.95
+      }
+    ],
+    "progress": {
+      "25": [
+        "The first shelves are up. Wonderful, keep going.",
+        "A good start. The books are eager to find their home."
+      ],
+      "50": [
+        "Halfway there. The library is starting to feel real.",
+        "I can almost smell the old pages. Keep building!"
+      ],
+      "75": [
+        "Nearly done. Just a few more touches and readers can move in.",
+        "So close! The reading lamp is flickering with anticipation."
+      ],
+      "100": [
+        "Magnificent! This library is open for business. Shhh!",
+        "What a beautiful reading room! The books are delighted!"
+      ]
+    },
+    "tension": {
+      "50": [
+        "Half the time has passed. Keep shelving quietly.",
+        "The clock ticks on. Don't rush, but don't dawdle either."
+      ],
+      "25": [
+        "Time is running low. The librarian is getting nervous!",
+        "Hurry, but quietly! A quarter of your time remains!"
+      ],
+      "10": [
+        "Shhh! Almost out of time! Quick, place those last pieces!",
+        "The library is closing soon! Finish up, builder!"
+      ],
+      "expired": [
+        "Oh dear. The library closed before you finished. Try again?",
+        "Time's up. The books will have to wait for their shelves."
+      ]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "classic_library",
+      "slots": [
+        { "id": "shelves_1_slot", "position": { "x": 0, "y": 2 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "shelves", "label": "Left bookshelf" },
+        { "id": "shelves_2_slot", "position": { "x": 3, "y": 2 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "shelves", "label": "Center bookshelf" },
+        { "id": "shelves_3_slot", "position": { "x": 6, "y": 2 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "shelves", "label": "Right bookshelf" },
+        { "id": "desk_slot", "position": { "x": 3, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "desk", "label": "Reading desk" },
+        { "id": "chair_1_slot", "position": { "x": 2, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "chair", "label": "Left chair" },
+        { "id": "chair_2_slot", "position": { "x": 5, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "chair", "label": "Right chair" },
+        { "id": "computer_slot", "position": { "x": 4, "y": 1 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "computer", "label": "Library computer" },
+        { "id": "reading_lamp_slot", "position": { "x": 3, "y": 1 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "lamp", "label": "Reading lamp" }
+      ]
+    },
+    {
+      "variantId": "open_library",
+      "slots": [
+        { "id": "shelves_1_slot", "position": { "x": 0, "y": 3 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "shelves", "label": "Left bookshelf" },
+        { "id": "shelves_2_slot", "position": { "x": 6, "y": 3 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "shelves", "label": "Right bookshelf" },
+        { "id": "shelves_3_slot", "position": { "x": 3, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "shelves", "label": "Back bookshelf" },
+        { "id": "desk_slot", "position": { "x": 2, "y": 0 }, "size": { "width": 3, "height": 1 }, "acceptsPieceType": "desk", "label": "Reading desk" },
+        { "id": "chair_1_slot", "position": { "x": 1, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "chair", "label": "Left chair" },
+        { "id": "chair_2_slot", "position": { "x": 5, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "chair", "label": "Right chair" },
+        { "id": "computer_slot", "position": { "x": 3, "y": 1 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "computer", "label": "Library computer" },
+        { "id": "reading_lamp_slot", "position": { "x": 4, "y": 1 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "lamp", "label": "Reading lamp" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    {
+      "id": "shelves_1",
+      "type": "shelves",
+      "label": "Left bookshelf",
+      "size": { "width": 2, "height": 3 },
+      "colorVariants": ["#8B4513", "#A0522D", "#5C3317", "#6B3A2E"],
+      "textureVariants": ["oak", "mahogany", "pine"]
+    },
+    {
+      "id": "shelves_2",
+      "type": "shelves",
+      "label": "Center bookshelf",
+      "size": { "width": 2, "height": 3 },
+      "colorVariants": ["#8B4513", "#A0522D", "#5C3317", "#6B3A2E"],
+      "textureVariants": ["oak", "mahogany", "pine"]
+    },
+    {
+      "id": "shelves_3",
+      "type": "shelves",
+      "label": "Right bookshelf",
+      "size": { "width": 2, "height": 3 },
+      "colorVariants": ["#8B4513", "#A0522D", "#5C3317"],
+      "textureVariants": ["oak", "mahogany", "pine"]
+    },
+    {
+      "id": "desk",
+      "type": "desk",
+      "label": "Reading desk",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#5D4037", "#4E342E", "#3E2723", "#6D4C41"],
+      "textureVariants": ["polished", "rustic", "modern"]
+    },
+    {
+      "id": "chair_1",
+      "type": "chair",
+      "label": "Left reading chair",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#795548", "#4E342E", "#D7CCC8"],
+      "textureVariants": ["leather", "cushioned", "wooden"]
+    },
+    {
+      "id": "chair_2",
+      "type": "chair",
+      "label": "Right reading chair",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#795548", "#4E342E", "#D7CCC8"],
+      "textureVariants": ["leather", "cushioned", "wooden"]
+    },
+    {
+      "id": "computer",
+      "type": "computer",
+      "label": "Library computer",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#37474F", "#546E7A", "#78909C"],
+      "textureVariants": ["modern", "retro", "sleek"]
+    },
+    {
+      "id": "reading_lamp",
+      "type": "lamp",
+      "label": "Reading lamp",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#FFD54F", "#FFB300", "#FFC107", "#FFCA28"],
+      "textureVariants": ["brass", "modern", "antique"]
+    }
+  ],
+
+  "bonusPieces": [
+    { "id": "globe", "label": "Globe", "probability": 0.5 },
+    { "id": "book_stack", "label": "Stack of rare books", "probability": 0.4 },
+    { "id": "reading_glasses", "label": "Reading glasses", "probability": 0.3 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_11_desk_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 3, "y": 0 }, "tapsRequired": 3 },
+      "reward": { "type": "audio", "content": "A stern librarian whispers: Shhhhh! This is a library!" },
+      "hint": "Tap the reading desk three times"
+    },
+    {
+      "id": "ee_11_speed_bookworm",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 22 },
+      "reward": { "type": "visual", "content": "A tiny bookworm crawls across the shelves! You earned the Bookworm badge!" },
+      "hint": "Complete the library in under 22 seconds"
+    }
+  ]
+}

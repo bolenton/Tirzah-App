@@ -1,0 +1,219 @@
+{
+  "id": 13,
+  "name": "Build a Castle",
+  "description": "Raise the towers, lower the drawbridge, and construct a fortress fit for a king... or a villain",
+  "challengeTime": 55,
+  "gridSize": { "width": 8, "height": 8 },
+  "backgroundTheme": "dark_medieval",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Mwahaha! Welcome to MY castle, foolish builder. You think you can construct a fortress worthy of a true villain? Towers, walls, a moat... let's see if you have what it takes!",
+        "voiceStyle": "spooky_villain",
+        "rate": 0.46,
+        "pitchMultiplier": 0.85
+      },
+      {
+        "text": "Thunder crashes in the distance. A dark castle needs a dark builder. Place the stones, raise the towers, and don't forget my throne room. Every villain needs a good throne!",
+        "voiceStyle": "spooky_villain",
+        "rate": 0.44,
+        "pitchMultiplier": 0.8
+      },
+      {
+        "text": "So, you dare to build in MY domain? Very well. Construct this castle perfectly, and perhaps I won't feed you to the moat monster. Perhaps.",
+        "voiceStyle": "spooky_villain",
+        "rate": 0.42,
+        "pitchMultiplier": 0.82
+      },
+      {
+        "text": "Bats flutter overhead as you approach the building site. A castle must rise here, dark and imposing. Towers to the sky, walls of stone, and a drawbridge to keep the heroes OUT!",
+        "voiceStyle": "spooky_villain",
+        "rate": 0.48,
+        "pitchMultiplier": 0.88
+      }
+    ],
+    "progress": {
+      "25": [
+        "The foundation trembles with dark energy. Keep building!",
+        "Yes, yes... the walls begin to rise. Excellent!"
+      ],
+      "50": [
+        "Halfway done! The castle grows more menacing by the minute!",
+        "Mwahaha! Even I am impressed. Continue, builder!"
+      ],
+      "75": [
+        "Almost complete! The towers are reaching for the stormy sky!",
+        "The moat is filling. The flags are flying. Just a bit more!"
+      ],
+      "100": [
+        "MAGNIFICENT! A castle worthy of the greatest villain! That's me, of course.",
+        "The castle stands! Dark, imposing, and absolutely perfect. Well done, minion!"
+      ]
+    },
+    "tension": {
+      "50": [
+        "Half the time gone. The storm grows closer, builder!",
+        "Tick tock, the dungeon clock is counting down!"
+      ],
+      "25": [
+        "The drawbridge is rising! Hurry before you're locked out!",
+        "My patience grows thin, builder! A quarter of time remains!"
+      ],
+      "10": [
+        "The ghost army approaches! Build faster! FASTER!",
+        "Seconds away from doom! Place those final pieces!"
+      ],
+      "expired": [
+        "FOOL! You failed to complete MY castle! The moat monster is disappointed.",
+        "Time has expired. The castle crumbles to dust. How... villainously tragic."
+      ]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "dark_fortress",
+      "slots": [
+        { "id": "tower_left_slot", "position": { "x": 0, "y": 5 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "tower", "label": "Left tower" },
+        { "id": "tower_right_slot", "position": { "x": 7, "y": 5 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "tower", "label": "Right tower" },
+        { "id": "wall_1_slot", "position": { "x": 1, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "wall", "label": "Left wall" },
+        { "id": "wall_2_slot", "position": { "x": 3, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "wall", "label": "Center wall" },
+        { "id": "wall_3_slot", "position": { "x": 5, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "wall", "label": "Right wall" },
+        { "id": "drawbridge_slot", "position": { "x": 3, "y": 3 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "drawbridge", "label": "Drawbridge" },
+        { "id": "flag_1_slot", "position": { "x": 0, "y": 7 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "flag", "label": "Left flag" },
+        { "id": "flag_2_slot", "position": { "x": 7, "y": 7 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "flag", "label": "Right flag" },
+        { "id": "moat_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 8, "height": 1 }, "acceptsPieceType": "moat", "label": "Moat" },
+        { "id": "throne_slot", "position": { "x": 3, "y": 7 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "throne", "label": "Throne" }
+      ]
+    },
+    {
+      "variantId": "grand_castle",
+      "slots": [
+        { "id": "tower_left_slot", "position": { "x": 1, "y": 5 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "tower", "label": "Left tower" },
+        { "id": "tower_right_slot", "position": { "x": 6, "y": 5 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "tower", "label": "Right tower" },
+        { "id": "wall_1_slot", "position": { "x": 2, "y": 5 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "wall", "label": "Left wall" },
+        { "id": "wall_2_slot", "position": { "x": 3, "y": 6 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "wall", "label": "Center wall" },
+        { "id": "wall_3_slot", "position": { "x": 5, "y": 5 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "wall", "label": "Right wall" },
+        { "id": "drawbridge_slot", "position": { "x": 3, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "drawbridge", "label": "Drawbridge" },
+        { "id": "flag_1_slot", "position": { "x": 1, "y": 7 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "flag", "label": "Left flag" },
+        { "id": "flag_2_slot", "position": { "x": 6, "y": 7 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "flag", "label": "Right flag" },
+        { "id": "moat_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 8, "height": 2 }, "acceptsPieceType": "moat", "label": "Moat" },
+        { "id": "throne_slot", "position": { "x": 3, "y": 2 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "throne", "label": "Throne" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    {
+      "id": "tower_left",
+      "type": "tower",
+      "label": "Left tower",
+      "size": { "width": 1, "height": 3 },
+      "colorVariants": ["#424242", "#616161", "#37474F", "#263238"],
+      "textureVariants": ["stone", "dark_brick", "mossy"]
+    },
+    {
+      "id": "tower_right",
+      "type": "tower",
+      "label": "Right tower",
+      "size": { "width": 1, "height": 3 },
+      "colorVariants": ["#424242", "#616161", "#37474F", "#263238"],
+      "textureVariants": ["stone", "dark_brick", "mossy"]
+    },
+    {
+      "id": "wall_1",
+      "type": "wall",
+      "label": "Left castle wall",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#546E7A", "#455A64", "#37474F"],
+      "textureVariants": ["stone", "cracked", "fortified"]
+    },
+    {
+      "id": "wall_2",
+      "type": "wall",
+      "label": "Center castle wall",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#546E7A", "#455A64", "#37474F"],
+      "textureVariants": ["stone", "cracked", "fortified"]
+    },
+    {
+      "id": "wall_3",
+      "type": "wall",
+      "label": "Right castle wall",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#546E7A", "#455A64", "#37474F"],
+      "textureVariants": ["stone", "cracked", "fortified"]
+    },
+    {
+      "id": "drawbridge",
+      "type": "drawbridge",
+      "label": "Drawbridge",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#5D4037", "#4E342E", "#3E2723", "#6D4C41"],
+      "textureVariants": ["wooden", "iron_reinforced", "ancient"]
+    },
+    {
+      "id": "flag_1",
+      "type": "flag",
+      "label": "Left tower flag",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#B71C1C", "#1A237E", "#4A148C", "#1B5E20"],
+      "textureVariants": ["tattered", "royal", "pirate"]
+    },
+    {
+      "id": "flag_2",
+      "type": "flag",
+      "label": "Right tower flag",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#B71C1C", "#1A237E", "#4A148C", "#1B5E20"],
+      "textureVariants": ["tattered", "royal", "pirate"]
+    },
+    {
+      "id": "moat",
+      "type": "moat",
+      "label": "Castle moat",
+      "size": { "width": 8, "height": 1 },
+      "colorVariants": ["#0D47A1", "#1565C0", "#1B5E20"],
+      "textureVariants": ["murky", "deep", "swampy"]
+    },
+    {
+      "id": "throne",
+      "type": "throne",
+      "label": "Villain's throne",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#FFD700", "#B71C1C", "#4A148C", "#212121"],
+      "textureVariants": ["golden", "obsidian", "crystal"]
+    }
+  ],
+
+  "bonusPieces": [
+    { "id": "dragon", "label": "Pet dragon", "probability": 0.4 },
+    { "id": "treasure_chest", "label": "Treasure chest", "probability": 0.45 },
+    { "id": "gargoyle", "label": "Gargoyle", "probability": 0.3 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_13_tower_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 0, "y": 7 }, "tapsRequired": 5 },
+      "reward": { "type": "audio", "content": "A ghostly laugh echoes through the castle halls! Mwahahahaha!" },
+      "hint": "Tap the top of a tower five times"
+    },
+    {
+      "id": "ee_13_speed_knight",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 20 },
+      "reward": { "type": "visual", "content": "A shining knight rides across the drawbridge! You earned the Knight badge!" },
+      "hint": "Complete the castle in under 20 seconds"
+    },
+    {
+      "id": "ee_13_throne_first",
+      "type": "sequence",
+      "trigger": { "pieceSequence": ["throne", "wall_1", "wall_2", "wall_3"] },
+      "reward": { "type": "narrative", "content": "A throne before walls? How bold! The villain laughs: I like your style! No walls needed when you're THIS scary!" },
+      "hint": "Place the throne before building any walls"
+    }
+  ]
+}

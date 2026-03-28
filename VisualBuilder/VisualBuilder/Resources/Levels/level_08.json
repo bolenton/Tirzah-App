@@ -1,0 +1,219 @@
+{
+  "id": 8,
+  "name": "Build a Farm",
+  "description": "Build a happy farm with a big red barn, a tractor, fences, and all the critters a farm could need!",
+  "challengeTime": 80,
+  "gridSize": { "width": 8, "height": 7 },
+  "backgroundTheme": "countryside",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Well howdy there, partner! We got ourselves some empty land and a whole lotta pieces. Time to build the finest farm this side of the river!",
+        "voiceStyle": "country_drawl",
+        "rate": 0.45,
+        "pitchMultiplier": 0.95
+      },
+      {
+        "text": "Rise and shine, farmer builder! The rooster's crowin' but there ain't no barn for him to sit on. Let's fix that right quick!",
+        "voiceStyle": "country_drawl",
+        "rate": 0.48,
+        "pitchMultiplier": 1.0
+      },
+      {
+        "text": "Yeehaw! You've got a barn, a tractor, some fences, and a whole mess of farm fixins. Put 'em all together and make this land come alive!",
+        "voiceStyle": "country_drawl",
+        "rate": 0.5,
+        "pitchMultiplier": 1.05
+      },
+      {
+        "text": "Welcome to farm country, builder! The cows are mooin', the chickens are cluckin', but they need a home. Get to buildin'!",
+        "voiceStyle": "country_drawl",
+        "rate": 0.47,
+        "pitchMultiplier": 0.9
+      }
+    ],
+    "progress": {
+      "25": [
+        "That's a fine start! The land is already looking like a real farm!",
+        "Good goin'! Keep layin' those pieces down, partner!"
+      ],
+      "50": [
+        "Half the farm is built! The animals are starting to feel right at home!",
+        "Lookin' mighty fine! I can practically smell the fresh hay!"
+      ],
+      "75": [
+        "Almost there! Just a few more pieces and this farm'll be complete!",
+        "The tractor's runnin' and the barn is almost done. Keep at it!"
+      ],
+      "100": [
+        "Yeehaw! That's the prettiest farm I ever did see! Outstanding work!",
+        "The farm is complete! The animals are happy and the crops are growin'!"
+      ]
+    },
+    "tension": {
+      "50": [
+        "Half the time gone, partner! Better pick up the pace!",
+        "The sun's movin' across the sky. Keep buildin'!"
+      ],
+      "25": [
+        "Sundown's comin' fast! Hurry up, farmer!",
+        "Time's runnin' short! The animals need their homes!"
+      ],
+      "10": [
+        "Last call, partner! Finish that farm before dark!",
+        "The sun's almost set! Quick, get those pieces in place!"
+      ],
+      "expired": [
+        "Aw shucks, the sun went down. Better luck tomorrow, partner.",
+        "Time's up! The farm ain't finished but you gave it a good try."
+      ]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "classic_farm",
+      "slots": [
+        { "id": "barn_slot", "position": { "x": 3, "y": 3 }, "size": { "width": 3, "height": 3 }, "acceptsPieceType": "barn", "label": "Big red barn" },
+        { "id": "tractor_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "tractor", "label": "Tractor" },
+        { "id": "fence_1_slot", "position": { "x": 0, "y": 2 }, "size": { "width": 3, "height": 1 }, "acceptsPieceType": "fence", "label": "Left fence" },
+        { "id": "fence_2_slot", "position": { "x": 6, "y": 2 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "fence", "label": "Right fence" },
+        { "id": "chicken_coop_slot", "position": { "x": 0, "y": 3 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "chicken_coop", "label": "Chicken coop" },
+        { "id": "cow_field_slot", "position": { "x": 6, "y": 3 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "cow_field", "label": "Cow field" },
+        { "id": "silo_slot", "position": { "x": 7, "y": 4 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "silo", "label": "Grain silo" },
+        { "id": "hay_bale_slot", "position": { "x": 2, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "hay_bale", "label": "Hay bale" },
+        { "id": "gate_slot", "position": { "x": 3, "y": 2 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "gate", "label": "Farm gate" },
+        { "id": "pond_slot", "position": { "x": 0, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "pond", "label": "Duck pond" }
+      ]
+    },
+    {
+      "variantId": "spread_farm",
+      "slots": [
+        { "id": "barn_slot", "position": { "x": 2, "y": 3 }, "size": { "width": 3, "height": 3 }, "acceptsPieceType": "barn", "label": "Big red barn" },
+        { "id": "tractor_slot", "position": { "x": 6, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "tractor", "label": "Tractor" },
+        { "id": "fence_1_slot", "position": { "x": 0, "y": 1 }, "size": { "width": 3, "height": 1 }, "acceptsPieceType": "fence", "label": "Left fence" },
+        { "id": "fence_2_slot", "position": { "x": 5, "y": 1 }, "size": { "width": 3, "height": 1 }, "acceptsPieceType": "fence", "label": "Right fence" },
+        { "id": "chicken_coop_slot", "position": { "x": 0, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "chicken_coop", "label": "Chicken coop" },
+        { "id": "cow_field_slot", "position": { "x": 6, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "cow_field", "label": "Cow field" },
+        { "id": "silo_slot", "position": { "x": 5, "y": 3 }, "size": { "width": 1, "height": 3 }, "acceptsPieceType": "silo", "label": "Grain silo" },
+        { "id": "hay_bale_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "hay_bale", "label": "Hay bale" },
+        { "id": "gate_slot", "position": { "x": 3, "y": 1 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "gate", "label": "Farm gate" },
+        { "id": "pond_slot", "position": { "x": 6, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "pond", "label": "Duck pond" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    {
+      "id": "barn_piece",
+      "type": "barn",
+      "label": "Big red barn",
+      "size": { "width": 3, "height": 3 },
+      "colorVariants": ["#B71C1C", "#D32F2F", "#8B0000", "#C62828"],
+      "textureVariants": ["wood_plank", "painted", "weathered"]
+    },
+    {
+      "id": "tractor_piece",
+      "type": "tractor",
+      "label": "Farm tractor",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#2E7D32", "#388E3C", "#1B5E20"],
+      "textureVariants": ["shiny", "muddy", "vintage"]
+    },
+    {
+      "id": "fence_1_piece",
+      "type": "fence",
+      "label": "Left fence section",
+      "size": { "width": 3, "height": 1 },
+      "colorVariants": ["#8D6E63", "#A1887F", "#5D4037", "#D7CCC8"],
+      "textureVariants": ["picket", "split_rail", "post_wire"]
+    },
+    {
+      "id": "fence_2_piece",
+      "type": "fence",
+      "label": "Right fence section",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#8D6E63", "#A1887F", "#5D4037", "#D7CCC8"],
+      "textureVariants": ["picket", "split_rail", "post_wire"]
+    },
+    {
+      "id": "chicken_coop_piece",
+      "type": "chicken_coop",
+      "label": "Chicken coop",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#FFF176", "#FFEE58", "#FFD54F"],
+      "textureVariants": ["wire_mesh", "wooden", "painted"]
+    },
+    {
+      "id": "cow_field_piece",
+      "type": "cow_field",
+      "label": "Cow pasture",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#66BB6A", "#81C784", "#4CAF50", "#A5D6A7"],
+      "textureVariants": ["grass", "clover", "wildflower"]
+    },
+    {
+      "id": "silo_piece",
+      "type": "silo",
+      "label": "Grain silo",
+      "size": { "width": 1, "height": 3 },
+      "colorVariants": ["#BDBDBD", "#9E9E9E", "#757575"],
+      "textureVariants": ["corrugated", "smooth", "riveted"]
+    },
+    {
+      "id": "hay_bale_piece",
+      "type": "hay_bale",
+      "label": "Hay bale",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#FFD54F", "#FFC107", "#FFB300", "#FFCA28"],
+      "textureVariants": ["round", "square", "loose"]
+    },
+    {
+      "id": "gate_piece",
+      "type": "gate",
+      "label": "Farm gate",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#5D4037", "#795548", "#6D4C41"],
+      "textureVariants": ["wooden", "iron", "rustic"]
+    },
+    {
+      "id": "pond_piece",
+      "type": "pond",
+      "label": "Duck pond",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#29B6F6", "#4FC3F7", "#0288D1"],
+      "textureVariants": ["still", "rippled", "lily_pads"]
+    }
+  ],
+
+  "bonusPieces": [
+    { "id": "scarecrow", "label": "Scarecrow", "probability": 0.4 },
+    { "id": "windmill", "label": "Windmill", "probability": 0.3 },
+    { "id": "dog_house", "label": "Farm dog house", "probability": 0.5 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_08_barn_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 4, "y": 4 }, "tapsRequired": 3 },
+      "reward": { "type": "audio", "content": "COCK-A-DOODLE-DOO! A proud rooster crows from the top of the barn!" },
+      "hint": "Tap the barn three times"
+    },
+    {
+      "id": "ee_08_speed_badge",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 28 },
+      "reward": { "type": "visual", "content": "You earned the Harvest Hero badge! Fastest farmer in the county!" },
+      "hint": "Complete the farm in under 28 seconds"
+    },
+    {
+      "id": "ee_08_animals_first",
+      "type": "sequence",
+      "trigger": { "pieceSequence": ["chicken_coop_piece", "cow_field_piece", "barn_piece"] },
+      "reward": { "type": "narrative", "content": "Ha! You let the animals move in before building their barn? The cows are giving you a very confused look! Rebel Rancher badge unlocked!" },
+      "hint": "Place the chicken coop and cow field before the barn"
+    }
+  ]
+}

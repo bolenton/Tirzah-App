@@ -1,0 +1,202 @@
+{
+  "id": 12,
+  "name": "Build a Beach",
+  "description": "Lay out towels, plant the umbrella, and create the ultimate beach day scene",
+  "challengeTime": 60,
+  "gridSize": { "width": 8, "height": 7 },
+  "backgroundTheme": "tropical_coast",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Duuude! Welcome to the chillest build ever. Sun, sand, and surf await. Grab that umbrella and let's make this beach totally epic, bro!",
+        "voiceStyle": "surfer_dude",
+        "rate": 0.5,
+        "pitchMultiplier": 1.05
+      },
+      {
+        "text": "Whoa, rad builder alert! Time to lay down some gnarly waves, plant a sandcastle, and set up the most bodacious beach scene ever!",
+        "voiceStyle": "surfer_dude",
+        "rate": 0.52,
+        "pitchMultiplier": 1.1
+      },
+      {
+        "text": "Surf's up, little dude! Before we catch waves, we gotta build the beach. Towels, umbrellas, the whole shebang. Let's do this!",
+        "voiceStyle": "surfer_dude",
+        "rate": 0.48,
+        "pitchMultiplier": 1.0
+      },
+      {
+        "text": "Nothing beats a perfect beach day, bro. But this beach needs YOUR help. Set up the scene and make it totally tubular!",
+        "voiceStyle": "surfer_dude",
+        "rate": 0.5,
+        "pitchMultiplier": 1.08
+      }
+    ],
+    "progress": {
+      "25": [
+        "Nice start, bro! The beach is already looking chill.",
+        "Radical! Keep laying those pieces down!"
+      ],
+      "50": [
+        "Halfway there, dude! This beach is gonna be epic!",
+        "Whoa, looking gnarly! The surf is calling!"
+      ],
+      "75": [
+        "Almost there, bro! Just a few more pieces to paradise!",
+        "So close to the perfect beach day! Keep going!"
+      ],
+      "100": [
+        "Cowabunga! That is one totally awesome beach, dude!",
+        "Surf's up! You built the most radical beach ever, bro!"
+      ]
+    },
+    "tension": {
+      "50": [
+        "Half the time is gone, dude. Ride the wave faster!",
+        "The tide is coming in, bro! Keep building!"
+      ],
+      "25": [
+        "Whoa, time's getting gnarly! Hurry it up, builder!",
+        "The sun's setting fast! Finish this beach, bro!"
+      ],
+      "10": [
+        "Dude! Wipeout incoming! Place those pieces NOW!",
+        "Last wave, bro! Quick, finish the beach!"
+      ],
+      "expired": [
+        "Bummer, dude. The tide washed it all away. Try again!",
+        "Wipeout! Time ran out. The beach will be here for another try, bro."
+      ]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "classic_beach",
+      "slots": [
+        { "id": "umbrella_slot", "position": { "x": 3, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "umbrella", "label": "Beach umbrella" },
+        { "id": "waves_1_slot", "position": { "x": 0, "y": 6 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "waves", "label": "Left waves" },
+        { "id": "waves_2_slot", "position": { "x": 4, "y": 6 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "waves", "label": "Right waves" },
+        { "id": "sandcastle_slot", "position": { "x": 1, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "sandcastle", "label": "Sandcastle" },
+        { "id": "boat_slot", "position": { "x": 6, "y": 5 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "boat", "label": "Sailboat" },
+        { "id": "towel_slot", "position": { "x": 5, "y": 3 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "towel", "label": "Beach towel" },
+        { "id": "lifeguard_slot", "position": { "x": 0, "y": 4 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "lifeguard_chair", "label": "Lifeguard chair" },
+        { "id": "ice_cream_slot", "position": { "x": 7, "y": 1 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "cart", "label": "Ice cream cart" },
+        { "id": "volleyball_slot", "position": { "x": 2, "y": 1 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "net", "label": "Volleyball net" }
+      ]
+    },
+    {
+      "variantId": "wide_beach",
+      "slots": [
+        { "id": "umbrella_slot", "position": { "x": 4, "y": 3 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "umbrella", "label": "Beach umbrella" },
+        { "id": "waves_1_slot", "position": { "x": 0, "y": 6 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "waves", "label": "Left waves" },
+        { "id": "waves_2_slot", "position": { "x": 4, "y": 6 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "waves", "label": "Right waves" },
+        { "id": "sandcastle_slot", "position": { "x": 2, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "sandcastle", "label": "Sandcastle" },
+        { "id": "boat_slot", "position": { "x": 6, "y": 5 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "boat", "label": "Sailboat" },
+        { "id": "towel_slot", "position": { "x": 0, "y": 3 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "towel", "label": "Beach towel" },
+        { "id": "lifeguard_slot", "position": { "x": 7, "y": 3 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "lifeguard_chair", "label": "Lifeguard chair" },
+        { "id": "ice_cream_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "cart", "label": "Ice cream cart" },
+        { "id": "volleyball_slot", "position": { "x": 3, "y": 0 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "net", "label": "Volleyball net" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    {
+      "id": "umbrella",
+      "type": "umbrella",
+      "label": "Beach umbrella",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#E53935", "#FDD835", "#43A047", "#1E88E5"],
+      "textureVariants": ["striped", "solid", "polka_dot"]
+    },
+    {
+      "id": "waves_1",
+      "type": "waves",
+      "label": "Left ocean waves",
+      "size": { "width": 4, "height": 1 },
+      "colorVariants": ["#0277BD", "#0288D1", "#039BE5"],
+      "textureVariants": ["calm", "choppy", "foamy"]
+    },
+    {
+      "id": "waves_2",
+      "type": "waves",
+      "label": "Right ocean waves",
+      "size": { "width": 4, "height": 1 },
+      "colorVariants": ["#0277BD", "#0288D1", "#039BE5"],
+      "textureVariants": ["calm", "choppy", "foamy"]
+    },
+    {
+      "id": "sandcastle",
+      "type": "sandcastle",
+      "label": "Sandcastle",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#F9A825", "#FFD54F", "#FFECB3", "#E6B422"],
+      "textureVariants": ["simple", "fancy", "mega"]
+    },
+    {
+      "id": "boat",
+      "type": "boat",
+      "label": "Sailboat",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#FFFFFF", "#F44336", "#2196F3"],
+      "textureVariants": ["wooden", "fiberglass", "painted"]
+    },
+    {
+      "id": "towel",
+      "type": "towel",
+      "label": "Beach towel",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#FF7043", "#AB47BC", "#26C6DA", "#66BB6A"],
+      "textureVariants": ["striped", "tropical", "plain"]
+    },
+    {
+      "id": "lifeguard_chair",
+      "type": "lifeguard_chair",
+      "label": "Lifeguard chair",
+      "size": { "width": 1, "height": 2 },
+      "colorVariants": ["#FFFFFF", "#F44336", "#FFB300"],
+      "textureVariants": ["wooden", "metal", "classic"]
+    },
+    {
+      "id": "ice_cream_cart",
+      "type": "cart",
+      "label": "Ice cream cart",
+      "size": { "width": 1, "height": 2 },
+      "colorVariants": ["#F8BBD0", "#B3E5FC", "#DCEDC8"],
+      "textureVariants": ["retro", "modern", "colorful"]
+    },
+    {
+      "id": "volleyball_net",
+      "type": "net",
+      "label": "Volleyball net",
+      "size": { "width": 3, "height": 2 },
+      "colorVariants": ["#FFFFFF", "#FFEE58", "#BCAAA4"],
+      "textureVariants": ["standard", "pro", "beach"]
+    }
+  ],
+
+  "bonusPieces": [
+    { "id": "surfboard", "label": "Surfboard", "probability": 0.5 },
+    { "id": "beach_ball", "label": "Beach ball", "probability": 0.4 },
+    { "id": "palm_tree", "label": "Palm tree", "probability": 0.35 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_12_waves_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 2, "y": 6 }, "tapsRequired": 4 },
+      "reward": { "type": "audio", "content": "A seagull squawks loudly and swoops across the screen!" },
+      "hint": "Tap the ocean waves four times"
+    },
+    {
+      "id": "ee_12_speed_beach_bum",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 22 },
+      "reward": { "type": "visual", "content": "A golden sunset fills the sky! You earned the Beach Bum badge!" },
+      "hint": "Complete the beach in under 22 seconds"
+    }
+  ]
+}

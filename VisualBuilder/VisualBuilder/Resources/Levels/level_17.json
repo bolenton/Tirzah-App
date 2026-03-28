@@ -1,0 +1,112 @@
+{
+  "id": 17,
+  "name": "Build an Aquarium",
+  "description": "Create a spectacular aquarium with tanks, a coral reef, a tunnel, and amazing sea creatures",
+  "challengeTime": 45,
+  "gridSize": { "width": 8, "height": 8 },
+  "backgroundTheme": "ocean_depths",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Diving deep, explorer! We're building an aquarium that would make the ocean jealous. Giant tanks, glowing jellyfish, and a tunnel where you walk with the fishes above you!",
+        "voiceStyle": "deep_sea_diver",
+        "rate": 0.44,
+        "pitchMultiplier": 0.82
+      },
+      {
+        "text": "Bubbles rising, pressure building! Down here in the deep blue, we need tanks for every creature imaginable. Coral reefs, seahorses, and a jellyfish dome that glows in the dark!",
+        "voiceStyle": "deep_sea_diver",
+        "rate": 0.46,
+        "pitchMultiplier": 0.85
+      },
+      {
+        "text": "Welcome to the deep end, builder! Above the surface they have no idea what we're creating. An aquarium so magnificent, even the fish will line up to get in!",
+        "voiceStyle": "deep_sea_diver",
+        "rate": 0.45,
+        "pitchMultiplier": 0.88
+      }
+    ],
+    "progress": {
+      "25": ["The first tanks are filled! The fish are swimming in!", "Bubbles are rising! Great start, diver!"],
+      "50": ["Halfway through the deep blue! The aquarium is taking shape!", "The coral reef is glowing! Keep building!"],
+      "75": ["Almost ready to open the doors! The creatures are eager!", "The jellyfish are pulsing with excitement!"],
+      "100": ["The aquarium is magnificent! Every tank is alive with wonder!", "Splashing success! The ocean would be proud of this aquarium!"]
+    },
+    "tension": {
+      "50": ["The tide is turning! Half your air supply is gone!", "Fish are circling impatiently! Pick up the pace, diver!"],
+      "25": ["Oxygen running low! Build those last tanks quickly!", "The sea creatures can't wait much longer!"],
+      "10": ["Your air tank is nearly empty! Final pieces, NOW!", "Ten seconds of air left! Finish the aquarium!"],
+      "expired": ["You've surfaced without finishing! The fish swim away disappointed.", "Air supply depleted! The aquarium remains incomplete."]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "oceanic",
+      "slots": [
+        { "id": "tank_1_slot", "position": { "x": 0, "y": 4 }, "size": { "width": 3, "height": 3 }, "acceptsPieceType": "tank_large", "label": "Big ocean tank" },
+        { "id": "tank_2_slot", "position": { "x": 3, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "tank_medium", "label": "Tropical tank" },
+        { "id": "tank_3_slot", "position": { "x": 5, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "tank_medium", "label": "Freshwater tank" },
+        { "id": "fish_display_slot", "position": { "x": 0, "y": 2 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "display", "label": "Fish display" },
+        { "id": "coral_reef_slot", "position": { "x": 2, "y": 2 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "coral", "label": "Coral reef exhibit" },
+        { "id": "tunnel_slot", "position": { "x": 0, "y": 1 }, "size": { "width": 8, "height": 1 }, "acceptsPieceType": "tunnel", "label": "Walk-through tunnel" },
+        { "id": "gift_shop_slot", "position": { "x": 6, "y": 2 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "shop", "label": "Gift shop" },
+        { "id": "entrance_slot", "position": { "x": 3, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "entrance", "label": "Main entrance" },
+        { "id": "seahorse_tank_slot", "position": { "x": 5, "y": 3 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "special_tank", "label": "Seahorse tank" },
+        { "id": "jellyfish_dome_slot", "position": { "x": 6, "y": 4 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "dome", "label": "Jellyfish dome" }
+      ]
+    },
+    {
+      "variantId": "tropical",
+      "slots": [
+        { "id": "tank_1_slot", "position": { "x": 0, "y": 5 }, "size": { "width": 3, "height": 3 }, "acceptsPieceType": "tank_large", "label": "Main exhibit tank" },
+        { "id": "tank_2_slot", "position": { "x": 3, "y": 6 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "tank_medium", "label": "Reef tank" },
+        { "id": "tank_3_slot", "position": { "x": 5, "y": 6 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "tank_medium", "label": "Deep sea tank" },
+        { "id": "fish_display_slot", "position": { "x": 0, "y": 3 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "display", "label": "Interactive display" },
+        { "id": "coral_reef_slot", "position": { "x": 2, "y": 3 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "coral", "label": "Living coral garden" },
+        { "id": "tunnel_slot", "position": { "x": 0, "y": 2 }, "size": { "width": 8, "height": 1 }, "acceptsPieceType": "tunnel", "label": "Glass tunnel" },
+        { "id": "gift_shop_slot", "position": { "x": 6, "y": 0 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "shop", "label": "Ocean gift shop" },
+        { "id": "entrance_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "entrance", "label": "Aquarium entrance" },
+        { "id": "seahorse_tank_slot", "position": { "x": 5, "y": 4 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "special_tank", "label": "Seahorse habitat" },
+        { "id": "jellyfish_dome_slot", "position": { "x": 6, "y": 3 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "dome", "label": "Jellyfish observatory" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    { "id": "tank_1", "type": "tank_large", "label": "Big ocean tank", "size": { "width": 3, "height": 3 }, "colorVariants": ["#0277BD", "#0288D1", "#039BE5", "#03A9F4"], "textureVariants": ["glass", "acrylic", "curved"] },
+    { "id": "tank_2", "type": "tank_medium", "label": "Tropical tank", "size": { "width": 2, "height": 2 }, "colorVariants": ["#00838F", "#0097A7", "#00ACC1"], "textureVariants": ["glass", "acrylic", "bubble"] },
+    { "id": "tank_3", "type": "tank_medium", "label": "Freshwater tank", "size": { "width": 2, "height": 2 }, "colorVariants": ["#2E7D32", "#388E3C", "#43A047"], "textureVariants": ["glass", "acrylic", "natural"] },
+    { "id": "fish_display", "type": "display", "label": "Fish display wall", "size": { "width": 2, "height": 2 }, "colorVariants": ["#1A237E", "#283593", "#303F9F", "#3949AB"], "textureVariants": ["digital", "backlit", "interactive"] },
+    { "id": "coral_reef", "type": "coral", "label": "Coral reef exhibit", "size": { "width": 3, "height": 2 }, "colorVariants": ["#FF7043", "#FF8A65", "#FFAB91", "#E91E63"], "textureVariants": ["brain_coral", "fan_coral", "mixed"] },
+    { "id": "tunnel", "type": "tunnel", "label": "Walk-through tunnel", "size": { "width": 8, "height": 1 }, "colorVariants": ["#4FC3F7", "#29B6F6", "#03A9F4"], "textureVariants": ["glass_tube", "acrylic_arch", "panoramic"] },
+    { "id": "gift_shop", "type": "shop", "label": "Gift shop", "size": { "width": 2, "height": 2 }, "colorVariants": ["#FFF176", "#FFF59D", "#FFFDE7", "#FFF9C4"], "textureVariants": ["nautical", "tropical", "modern"] },
+    { "id": "entrance", "type": "entrance", "label": "Aquarium entrance", "size": { "width": 2, "height": 1 }, "colorVariants": ["#26C6DA", "#00BCD4", "#00ACC1", "#0097A7"], "textureVariants": ["wave_arch", "shell_gate", "modern"] },
+    { "id": "seahorse_tank", "type": "special_tank", "label": "Seahorse tank", "size": { "width": 1, "height": 2 }, "colorVariants": ["#CE93D8", "#BA68C8", "#AB47BC"], "textureVariants": ["seagrass", "reef", "minimal"] },
+    { "id": "jellyfish_dome", "type": "dome", "label": "Jellyfish dome", "size": { "width": 2, "height": 1 }, "colorVariants": ["#7C4DFF", "#B388FF", "#EA80FC", "#E040FB"], "textureVariants": ["glowing", "dark", "pulsing"] }
+  ],
+
+  "bonusPieces": [
+    { "id": "treasure_chest", "label": "Sunken treasure chest", "probability": 0.35 },
+    { "id": "scuba_diver", "label": "Scuba diver figure", "probability": 0.3 },
+    { "id": "octopus_toy", "label": "Octopus plushie", "probability": 0.4 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_17_whale_song",
+      "type": "tap",
+      "trigger": { "position": { "x": 0, "y": 4 }, "tapsRequired": 5 },
+      "reward": { "type": "audio", "content": "WHOOOOOOO-OOOOOH! A majestic whale song echoes through the aquarium! The big tank rumbles with deep ocean music!" },
+      "hint": "Tap the big ocean tank five times"
+    },
+    {
+      "id": "ee_17_deep_diver",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 18 },
+      "reward": { "type": "narrative", "content": "You dove to the bottom and built it all in one breath! Unbelievable! Deep Diver Badge earned!" },
+      "hint": "Complete the aquarium in under 18 seconds"
+    }
+  ]
+}

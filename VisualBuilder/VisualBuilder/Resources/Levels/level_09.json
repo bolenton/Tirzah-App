@@ -1,0 +1,202 @@
+{
+  "id": 9,
+  "name": "Build a Park",
+  "description": "Create a beautiful park with a lake, benches, a bridge, trees, and a splashing fountain for everyone to enjoy!",
+  "challengeTime": 75,
+  "gridSize": { "width": 8, "height": 7 },
+  "backgroundTheme": "nature_park",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Hey there, friend. Welcome to the great outdoors. We've got a lovely spot of land here that's just begging to become a park. Take it easy and build something beautiful.",
+        "voiceStyle": "relaxed_ranger",
+        "rate": 0.45,
+        "pitchMultiplier": 0.9
+      },
+      {
+        "text": "What a perfect day to build a park! A little lake here, some benches there, maybe a fountain in the middle. Nature is counting on you, builder.",
+        "voiceStyle": "relaxed_ranger",
+        "rate": 0.48,
+        "pitchMultiplier": 0.95
+      },
+      {
+        "text": "Breathe in that fresh air, builder! Now let's turn this open space into the most relaxing park in town. Trees, a bridge, a duck pond, the works!",
+        "voiceStyle": "relaxed_ranger",
+        "rate": 0.5,
+        "pitchMultiplier": 1.0
+      },
+      {
+        "text": "The birds are singing and the sun is shining. All that's missing is a park! Place each piece with care and create a place where everyone can unwind.",
+        "voiceStyle": "relaxed_ranger",
+        "rate": 0.47,
+        "pitchMultiplier": 1.05
+      }
+    ],
+    "progress": {
+      "25": [
+        "Nice start! The park is beginning to take shape.",
+        "Looking good! The birds are already scouting for nesting spots."
+      ],
+      "50": [
+        "Halfway there! I can almost hear the fountain splashing!",
+        "Beautiful work so far! The park is coming to life."
+      ],
+      "75": [
+        "Almost done! Just a few more pieces to place!",
+        "So close! The ducks are lining up at the pond already!"
+      ],
+      "100": [
+        "What a stunning park! The whole town will love this place!",
+        "Park complete! Time to sit on a bench and enjoy your creation!"
+      ]
+    },
+    "tension": {
+      "50": [
+        "Half the time has drifted by, like clouds across the sky. Keep going!",
+        "Still plenty of time, but don't dawdle too long!"
+      ],
+      "25": [
+        "The sun is getting low! Better hurry, builder!",
+        "Time's running short! The park visitors are waiting!"
+      ],
+      "10": [
+        "Almost out of time! Quick, place those last pieces!",
+        "The gates close in seconds! Finish that park!"
+      ],
+      "expired": [
+        "Time's up. The park will have to wait for another day.",
+        "Oh, the sun set before you could finish. A peaceful try, though!"
+      ]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "classic_park",
+      "slots": [
+        { "id": "lake_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "lake", "label": "Lake" },
+        { "id": "bench_1_slot", "position": { "x": 5, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "bench", "label": "Park bench 1" },
+        { "id": "bench_2_slot", "position": { "x": 7, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "bench", "label": "Park bench 2" },
+        { "id": "bridge_slot", "position": { "x": 3, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "bridge", "label": "Walking bridge" },
+        { "id": "tree_1_slot", "position": { "x": 0, "y": 4 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "tree", "label": "Oak tree" },
+        { "id": "tree_2_slot", "position": { "x": 7, "y": 5 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "tree", "label": "Maple tree" },
+        { "id": "duck_pond_slot", "position": { "x": 5, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "duck_pond", "label": "Duck pond" },
+        { "id": "fountain_slot", "position": { "x": 3, "y": 3 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "fountain", "label": "Fountain" },
+        { "id": "path_slot", "position": { "x": 1, "y": 2 }, "size": { "width": 5, "height": 1 }, "acceptsPieceType": "path", "label": "Walking path" }
+      ]
+    },
+    {
+      "variantId": "open_park",
+      "slots": [
+        { "id": "lake_slot", "position": { "x": 5, "y": 4 }, "size": { "width": 3, "height": 2 }, "acceptsPieceType": "lake", "label": "Lake" },
+        { "id": "bench_1_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "bench", "label": "Park bench 1" },
+        { "id": "bench_2_slot", "position": { "x": 4, "y": 0 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "bench", "label": "Park bench 2" },
+        { "id": "bridge_slot", "position": { "x": 4, "y": 4 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "bridge", "label": "Walking bridge" },
+        { "id": "tree_1_slot", "position": { "x": 0, "y": 5 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "tree", "label": "Oak tree" },
+        { "id": "tree_2_slot", "position": { "x": 7, "y": 0 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "tree", "label": "Maple tree" },
+        { "id": "duck_pond_slot", "position": { "x": 1, "y": 4 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "duck_pond", "label": "Duck pond" },
+        { "id": "fountain_slot", "position": { "x": 3, "y": 2 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "fountain", "label": "Fountain" },
+        { "id": "path_slot", "position": { "x": 1, "y": 1 }, "size": { "width": 6, "height": 1 }, "acceptsPieceType": "path", "label": "Walking path" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    {
+      "id": "lake_piece",
+      "type": "lake",
+      "label": "Lake",
+      "size": { "width": 3, "height": 2 },
+      "colorVariants": ["#0288D1", "#0277BD", "#01579B", "#039BE5"],
+      "textureVariants": ["calm", "rippled", "sparkling"]
+    },
+    {
+      "id": "bench_1_piece",
+      "type": "bench",
+      "label": "Park bench 1",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#5D4037", "#795548", "#4E342E"],
+      "textureVariants": ["wooden", "iron", "recycled"]
+    },
+    {
+      "id": "bench_2_piece",
+      "type": "bench",
+      "label": "Park bench 2",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#5D4037", "#795548", "#4E342E"],
+      "textureVariants": ["wooden", "iron", "recycled"]
+    },
+    {
+      "id": "bridge_piece",
+      "type": "bridge",
+      "label": "Walking bridge",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#8D6E63", "#A1887F", "#6D4C41", "#D7CCC8"],
+      "textureVariants": ["wooden", "stone", "arched"]
+    },
+    {
+      "id": "tree_1_piece",
+      "type": "tree",
+      "label": "Oak tree",
+      "size": { "width": 1, "height": 2 },
+      "colorVariants": ["#2E7D32", "#388E3C", "#1B5E20"],
+      "textureVariants": ["leafy", "autumn", "spring"]
+    },
+    {
+      "id": "tree_2_piece",
+      "type": "tree",
+      "label": "Maple tree",
+      "size": { "width": 1, "height": 2 },
+      "colorVariants": ["#F57F17", "#FF8F00", "#E65100", "#2E7D32"],
+      "textureVariants": ["leafy", "autumn", "spring"]
+    },
+    {
+      "id": "duck_pond_piece",
+      "type": "duck_pond",
+      "label": "Duck pond",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#4FC3F7", "#29B6F6", "#81D4FA"],
+      "textureVariants": ["still", "lily_pads", "reedy"]
+    },
+    {
+      "id": "fountain_piece",
+      "type": "fountain",
+      "label": "Fountain",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#BDBDBD", "#E0E0E0", "#9E9E9E", "#757575"],
+      "textureVariants": ["marble", "granite", "mosaic"]
+    },
+    {
+      "id": "path_piece",
+      "type": "path",
+      "label": "Walking path",
+      "size": { "width": 5, "height": 1 },
+      "colorVariants": ["#D7CCC8", "#BCAAA4", "#8D6E63"],
+      "textureVariants": ["gravel", "cobblestone", "brick"]
+    }
+  ],
+
+  "bonusPieces": [
+    { "id": "picnic_table", "label": "Picnic table", "probability": 0.5 },
+    { "id": "bird_feeder", "label": "Bird feeder", "probability": 0.4 },
+    { "id": "swing_set", "label": "Swing set", "probability": 0.3 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_09_lake_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 1, "y": 1 }, "tapsRequired": 4 },
+      "reward": { "type": "audio", "content": "SPLASH! A big fish leaps out of the lake and belly-flops back in! The ducks are not amused." },
+      "hint": "Tap the lake four times"
+    },
+    {
+      "id": "ee_09_speed_badge",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 25 },
+      "reward": { "type": "visual", "content": "You earned the Park Ranger Express badge! That park appeared faster than wildflowers in spring!" },
+      "hint": "Complete the park in under 25 seconds"
+    }
+  ]
+}

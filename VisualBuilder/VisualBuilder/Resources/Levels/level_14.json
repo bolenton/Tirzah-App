@@ -1,0 +1,201 @@
+{
+  "id": 14,
+  "name": "Build a Train Station",
+  "description": "Lay the tracks, raise the platform, and get this station ready for departure",
+  "challengeTime": 55,
+  "gridSize": { "width": 8, "height": 6 },
+  "backgroundTheme": "industrial_vintage",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "All aboard! Welcome to Platform Builder, where YOU are the chief engineer! Lay those tracks, raise that clock tower, and get this station shipshape before the express arrives!",
+        "voiceStyle": "train_conductor",
+        "rate": 0.5,
+        "pitchMultiplier": 1.0
+      },
+      {
+        "text": "Tickets, please! Oh wait, we don't have a station yet. That's where you come in, engineer! Build us a station so fine that even the trains will whistle with joy!",
+        "voiceStyle": "train_conductor",
+        "rate": 0.48,
+        "pitchMultiplier": 1.05
+      },
+      {
+        "text": "The 3 o'clock express is on its way, and we haven't got a station! Quick, builder, lay the tracks, set up the platform, and make it grand!",
+        "voiceStyle": "train_conductor",
+        "rate": 0.52,
+        "pitchMultiplier": 0.95
+      },
+      {
+        "text": "Choo choo! Every great journey starts at a great station. Tracks, a platform, a ticket booth... let's build a station that makes travelers smile!",
+        "voiceStyle": "train_conductor",
+        "rate": 0.46,
+        "pitchMultiplier": 1.02
+      }
+    ],
+    "progress": {
+      "25": [
+        "The tracks are going down! Next stop: progress!",
+        "Great work, engineer! The foundation is laid!"
+      ],
+      "50": [
+        "Halfway there! I can almost hear the train whistle!",
+        "The platform is taking shape! Keep building, engineer!"
+      ],
+      "75": [
+        "Nearly ready for passengers! Just a few more pieces!",
+        "The clock tower is almost up! Finish strong, builder!"
+      ],
+      "100": [
+        "ALL ABOARD! What a magnificent station! The express will be proud!",
+        "The station is complete! First train departing NOW! Choo choo!"
+      ]
+    },
+    "tension": {
+      "50": [
+        "Half the time has passed. The train waits for no one!",
+        "The schedule is tight, engineer! Keep those pieces moving!"
+      ],
+      "25": [
+        "The express is approaching! Hurry, builder!",
+        "Quarter time remaining! The passengers are getting restless!"
+      ],
+      "10": [
+        "The train is pulling in! Finish the station NOW!",
+        "Last call! Seconds left to complete the station!"
+      ],
+      "expired": [
+        "The train has left without a station. How embarrassing! Try again, engineer.",
+        "Time's up! The passengers had to wait in the rain. Let's try once more!"
+      ]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "classic_station",
+      "slots": [
+        { "id": "tracks_1_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "tracks", "label": "Left tracks" },
+        { "id": "tracks_2_slot", "position": { "x": 4, "y": 0 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "tracks", "label": "Right tracks" },
+        { "id": "platform_slot", "position": { "x": 1, "y": 1 }, "size": { "width": 6, "height": 1 }, "acceptsPieceType": "platform", "label": "Station platform" },
+        { "id": "train_engine_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "engine", "label": "Train engine" },
+        { "id": "train_car_slot", "position": { "x": 2, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "car", "label": "Train car" },
+        { "id": "clock_tower_slot", "position": { "x": 3, "y": 3 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "clock_tower", "label": "Clock tower" },
+        { "id": "ticket_booth_slot", "position": { "x": 1, "y": 2 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "booth", "label": "Ticket booth" },
+        { "id": "bench_slot", "position": { "x": 6, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "bench", "label": "Waiting bench" },
+        { "id": "signal_slot", "position": { "x": 7, "y": 1 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "signal", "label": "Track signal" }
+      ]
+    },
+    {
+      "variantId": "modern_station",
+      "slots": [
+        { "id": "tracks_1_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "tracks", "label": "Left tracks" },
+        { "id": "tracks_2_slot", "position": { "x": 4, "y": 0 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "tracks", "label": "Right tracks" },
+        { "id": "platform_slot", "position": { "x": 0, "y": 1 }, "size": { "width": 8, "height": 1 }, "acceptsPieceType": "platform", "label": "Station platform" },
+        { "id": "train_engine_slot", "position": { "x": 5, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "engine", "label": "Train engine" },
+        { "id": "train_car_slot", "position": { "x": 3, "y": 0 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "car", "label": "Train car" },
+        { "id": "clock_tower_slot", "position": { "x": 0, "y": 3 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "clock_tower", "label": "Clock tower" },
+        { "id": "ticket_booth_slot", "position": { "x": 5, "y": 2 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "booth", "label": "Ticket booth" },
+        { "id": "bench_slot", "position": { "x": 3, "y": 2 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "bench", "label": "Waiting bench" },
+        { "id": "signal_slot", "position": { "x": 7, "y": 2 }, "size": { "width": 1, "height": 2 }, "acceptsPieceType": "signal", "label": "Track signal" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    {
+      "id": "tracks_1",
+      "type": "tracks",
+      "label": "Left track section",
+      "size": { "width": 4, "height": 1 },
+      "colorVariants": ["#5D4037", "#795548", "#6D4C41"],
+      "textureVariants": ["iron", "rusty", "polished"]
+    },
+    {
+      "id": "tracks_2",
+      "type": "tracks",
+      "label": "Right track section",
+      "size": { "width": 4, "height": 1 },
+      "colorVariants": ["#5D4037", "#795548", "#6D4C41"],
+      "textureVariants": ["iron", "rusty", "polished"]
+    },
+    {
+      "id": "platform",
+      "type": "platform",
+      "label": "Station platform",
+      "size": { "width": 6, "height": 1 },
+      "colorVariants": ["#9E9E9E", "#BDBDBD", "#757575", "#616161"],
+      "textureVariants": ["concrete", "cobblestone", "modern"]
+    },
+    {
+      "id": "train_engine",
+      "type": "engine",
+      "label": "Train engine",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#D32F2F", "#1565C0", "#2E7D32", "#F57F17"],
+      "textureVariants": ["steam", "diesel", "electric"]
+    },
+    {
+      "id": "train_car",
+      "type": "car",
+      "label": "Passenger car",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#1565C0", "#2E7D32", "#F57F17"],
+      "textureVariants": ["classic", "modern", "vintage"]
+    },
+    {
+      "id": "clock_tower",
+      "type": "clock_tower",
+      "label": "Station clock tower",
+      "size": { "width": 2, "height": 3 },
+      "colorVariants": ["#8D6E63", "#A1887F", "#6D4C41", "#4E342E"],
+      "textureVariants": ["brick", "stone", "ornate"]
+    },
+    {
+      "id": "ticket_booth",
+      "type": "booth",
+      "label": "Ticket booth",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#FFF176", "#FFD54F", "#FFB74D"],
+      "textureVariants": ["wooden", "glass", "vintage"]
+    },
+    {
+      "id": "bench",
+      "type": "bench",
+      "label": "Waiting bench",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#5D4037", "#33691E", "#4E342E"],
+      "textureVariants": ["wooden", "iron", "park_style"]
+    },
+    {
+      "id": "signal",
+      "type": "signal",
+      "label": "Track signal",
+      "size": { "width": 1, "height": 2 },
+      "colorVariants": ["#F44336", "#4CAF50", "#FFC107"],
+      "textureVariants": ["semaphore", "light", "vintage"]
+    }
+  ],
+
+  "bonusPieces": [
+    { "id": "luggage_cart", "label": "Luggage cart", "probability": 0.5 },
+    { "id": "newspaper_stand", "label": "Newspaper stand", "probability": 0.4 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_14_clock_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 3, "y": 5 }, "tapsRequired": 3 },
+      "reward": { "type": "audio", "content": "A mighty train whistle blasts through the station! WHOO WHOOOO!" },
+      "hint": "Tap the clock tower three times"
+    },
+    {
+      "id": "ee_14_speed_express",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 20 },
+      "reward": { "type": "visual", "content": "A golden express train roars through the station! You earned the Express badge!" },
+      "hint": "Complete the station in under 20 seconds"
+    }
+  ]
+}

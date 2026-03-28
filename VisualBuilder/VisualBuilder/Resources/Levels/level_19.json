@@ -1,0 +1,118 @@
+{
+  "id": 19,
+  "name": "Build a Town",
+  "description": "Create a charming little town with houses, shops, roads, cars, and a beautiful park",
+  "challengeTime": 40,
+  "gridSize": { "width": 9, "height": 8 },
+  "backgroundTheme": "countryside",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Citizens of Buildsville! As your newly elected mayor, I present to you our grand plan: houses, shops, roads, a lovely park, and yes, even street lights! Let the construction begin!",
+        "voiceStyle": "mayor_speech",
+        "rate": 0.46,
+        "pitchMultiplier": 0.92
+      },
+      {
+        "text": "Order, order! The town council has approved the master plan! We need two fine houses, a shop, a restaurant, roads connecting everything, and cars to drive on them. This town will thrive!",
+        "voiceStyle": "mayor_speech",
+        "rate": 0.45,
+        "pitchMultiplier": 0.9
+      },
+      {
+        "text": "My fellow builders, today we break ground on the finest little town this world has ever seen! From the park to the stop signs, every piece makes this community home!",
+        "voiceStyle": "mayor_speech",
+        "rate": 0.47,
+        "pitchMultiplier": 0.88
+      }
+    ],
+    "progress": {
+      "25": ["The first roads are paved! The town is starting!", "Foundations are down! The neighborhood is growing!"],
+      "50": ["Halfway to a thriving community! Houses are going up!", "The town square is taking shape! Wonderful progress, mayor!"],
+      "75": ["Almost a real town! Just a few more pieces to place!", "The residents are packing their bags to move in!"],
+      "100": ["The town is alive! Welcome to the greatest little community ever built!", "Ribbon cut! The town of Buildsville is officially open!"]
+    },
+    "tension": {
+      "50": ["The town meeting is in half the time! Keep building, mayor!", "Citizens are waiting to move in! Half the clock is gone!"],
+      "25": ["The moving trucks are arriving! We need this town finished!", "Town deadline approaching fast! Build, build, build!"],
+      "10": ["The grand opening is in ten seconds! Place those final pieces!", "The ribbon-cutting ceremony cannot wait! Finish NOW!"],
+      "expired": ["The citizens moved to a different town. Maybe next time, mayor.", "Town charter expired! Buildsville will have to wait for another day."]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "classic",
+      "slots": [
+        { "id": "house_1_slot", "position": { "x": 0, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "house", "label": "Family house" },
+        { "id": "house_2_slot", "position": { "x": 0, "y": 2 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "house", "label": "Neighbor house" },
+        { "id": "shop_slot", "position": { "x": 5, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "shop", "label": "Town shop" },
+        { "id": "restaurant_slot", "position": { "x": 7, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "restaurant", "label": "Town restaurant" },
+        { "id": "road_1_slot", "position": { "x": 2, "y": 0 }, "size": { "width": 1, "height": 8 }, "acceptsPieceType": "road", "label": "Main street" },
+        { "id": "road_2_slot", "position": { "x": 3, "y": 4 }, "size": { "width": 4, "height": 1 }, "acceptsPieceType": "road", "label": "Cross street" },
+        { "id": "road_3_slot", "position": { "x": 7, "y": 1 }, "size": { "width": 1, "height": 4 }, "acceptsPieceType": "road", "label": "East road" },
+        { "id": "car_1_slot", "position": { "x": 3, "y": 1 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "car", "label": "Family car" },
+        { "id": "car_2_slot", "position": { "x": 6, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "car", "label": "Delivery car" },
+        { "id": "stop_sign_slot", "position": { "x": 2, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "sign", "label": "Stop sign" },
+        { "id": "street_light_slot", "position": { "x": 2, "y": 7 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "light", "label": "Street light" },
+        { "id": "park_area_slot", "position": { "x": 3, "y": 5 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "park", "label": "Town park" }
+      ]
+    },
+    {
+      "variantId": "modern",
+      "slots": [
+        { "id": "house_1_slot", "position": { "x": 0, "y": 0 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "house", "label": "Corner house" },
+        { "id": "house_2_slot", "position": { "x": 0, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "house", "label": "Garden house" },
+        { "id": "shop_slot", "position": { "x": 5, "y": 0 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "shop", "label": "General store" },
+        { "id": "restaurant_slot", "position": { "x": 7, "y": 0 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "restaurant", "label": "Diner" },
+        { "id": "road_1_slot", "position": { "x": 4, "y": 0 }, "size": { "width": 1, "height": 8 }, "acceptsPieceType": "road", "label": "Central avenue" },
+        { "id": "road_2_slot", "position": { "x": 0, "y": 3 }, "size": { "width": 9, "height": 1 }, "acceptsPieceType": "road", "label": "Highway" },
+        { "id": "road_3_slot", "position": { "x": 7, "y": 4 }, "size": { "width": 1, "height": 4 }, "acceptsPieceType": "road", "label": "Side street" },
+        { "id": "car_1_slot", "position": { "x": 3, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "car", "label": "Red car" },
+        { "id": "car_2_slot", "position": { "x": 5, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "car", "label": "Blue car" },
+        { "id": "stop_sign_slot", "position": { "x": 4, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "sign", "label": "Stop sign" },
+        { "id": "street_light_slot", "position": { "x": 4, "y": 7 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "light", "label": "Street lamp" },
+        { "id": "park_area_slot", "position": { "x": 5, "y": 5 }, "size": { "width": 2, "height": 3 }, "acceptsPieceType": "park", "label": "Community park" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    { "id": "house_1", "type": "house", "label": "Family house", "size": { "width": 2, "height": 2 }, "colorVariants": ["#FFCCBC", "#FFAB91", "#FF8A65", "#D7CCC8"], "textureVariants": ["brick", "wooden", "stucco"] },
+    { "id": "house_2", "type": "house", "label": "Neighbor house", "size": { "width": 2, "height": 2 }, "colorVariants": ["#C8E6C9", "#A5D6A7", "#81C784", "#B2DFDB"], "textureVariants": ["brick", "wooden", "stucco"] },
+    { "id": "shop", "type": "shop", "label": "Town shop", "size": { "width": 2, "height": 2 }, "colorVariants": ["#FFF9C4", "#FFF176", "#FFEE58", "#FFD54F"], "textureVariants": ["storefront", "boutique", "market"] },
+    { "id": "restaurant", "type": "restaurant", "label": "Restaurant", "size": { "width": 2, "height": 2 }, "colorVariants": ["#F48FB1", "#F06292", "#EC407A", "#E91E63"], "textureVariants": ["cafe", "diner", "bistro"] },
+    { "id": "road_1", "type": "road", "label": "Main street", "size": { "width": 1, "height": 8 }, "colorVariants": ["#424242", "#616161", "#757575"], "textureVariants": ["asphalt", "cobblestone", "concrete"] },
+    { "id": "road_2", "type": "road", "label": "Cross street", "size": { "width": 4, "height": 1 }, "colorVariants": ["#424242", "#616161", "#757575"], "textureVariants": ["asphalt", "cobblestone", "concrete"] },
+    { "id": "road_3", "type": "road", "label": "Side road", "size": { "width": 1, "height": 4 }, "colorVariants": ["#424242", "#616161", "#757575"], "textureVariants": ["asphalt", "cobblestone", "concrete"] },
+    { "id": "car_1", "type": "car", "label": "Family car", "size": { "width": 1, "height": 1 }, "colorVariants": ["#F44336", "#E53935", "#D32F2F", "#C62828"], "textureVariants": ["sedan", "suv", "hatchback"] },
+    { "id": "car_2", "type": "car", "label": "Delivery car", "size": { "width": 1, "height": 1 }, "colorVariants": ["#2196F3", "#1E88E5", "#1976D2", "#1565C0"], "textureVariants": ["sedan", "van", "truck"] },
+    { "id": "stop_sign", "type": "sign", "label": "Stop sign", "size": { "width": 1, "height": 1 }, "colorVariants": ["#F44336", "#E53935", "#D32F2F"], "textureVariants": ["standard", "reflective", "vintage"] },
+    { "id": "street_light", "type": "light", "label": "Street light", "size": { "width": 1, "height": 1 }, "colorVariants": ["#FFE082", "#FFD54F", "#FFC107", "#FFA000"], "textureVariants": ["classic", "modern", "lantern"] },
+    { "id": "park_area", "type": "park", "label": "Town park", "size": { "width": 2, "height": 3 }, "colorVariants": ["#66BB6A", "#4CAF50", "#43A047", "#388E3C"], "textureVariants": ["garden", "playground", "nature"] }
+  ],
+
+  "bonusPieces": [
+    { "id": "fire_hydrant", "label": "Fire hydrant", "probability": 0.4 },
+    { "id": "mailbox", "label": "Mailbox", "probability": 0.35 },
+    { "id": "park_bench", "label": "Park bench", "probability": 0.45 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_19_car_horn",
+      "type": "tap",
+      "trigger": { "position": { "x": 2, "y": 4 }, "tapsRequired": 3 },
+      "reward": { "type": "audio", "content": "BEEP BEEP BEEEEP! Honk honk! The cars are getting impatient at the stop sign!" },
+      "hint": "Tap the stop sign three times"
+    },
+    {
+      "id": "ee_19_mayor_badge",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 15 },
+      "reward": { "type": "narrative", "content": "The fastest town ever built! The citizens are amazed! You've been re-elected unanimously! Mayor Badge earned!" },
+      "hint": "Complete the town in under 15 seconds"
+    }
+  ]
+}

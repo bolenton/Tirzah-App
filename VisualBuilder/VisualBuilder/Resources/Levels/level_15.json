@@ -1,0 +1,219 @@
+{
+  "id": 15,
+  "name": "Build a Space Station",
+  "description": "Assemble modules, deploy solar panels, and construct humanity's home among the stars",
+  "challengeTime": 50,
+  "gridSize": { "width": 8, "height": 8 },
+  "backgroundTheme": "deep_space",
+
+  "narrationScripts": {
+    "intros": [
+      {
+        "text": "Houston, we have a builder. Mission: construct the orbital space station. Modules, solar panels, and an observation deck. T-minus now. Let's get to work, astronaut.",
+        "voiceStyle": "mission_control",
+        "rate": 0.48,
+        "pitchMultiplier": 0.95
+      },
+      {
+        "text": "Mission Control to Builder One. You are cleared for construction in low Earth orbit. Assemble the station module by module. The stars are counting on you.",
+        "voiceStyle": "mission_control",
+        "rate": 0.46,
+        "pitchMultiplier": 0.92
+      },
+      {
+        "text": "This is Mission Control. The crew is waiting for their space station, and you are our best engineer. Solar panels, labs, the whole package. Make us proud up there.",
+        "voiceStyle": "mission_control",
+        "rate": 0.44,
+        "pitchMultiplier": 0.9
+      },
+      {
+        "text": "Gravity is optional, but precision is not. Build this space station piece by piece. Each module matters. Each connection counts. Go for launch, builder.",
+        "voiceStyle": "mission_control",
+        "rate": 0.5,
+        "pitchMultiplier": 0.98
+      }
+    ],
+    "progress": {
+      "25": [
+        "First module is in orbit. Good work, astronaut.",
+        "Roger that. Construction is underway. Keep it steady."
+      ],
+      "50": [
+        "Halfway assembled. The station is taking shape against the stars.",
+        "Copy that, builder. Looking good from down here!"
+      ],
+      "75": [
+        "Almost operational! Just a few more components to attach!",
+        "Station is at 75 percent. We can see it from the ground!"
+      ],
+      "100": [
+        "Mission accomplished! The space station is fully operational! Outstanding work, astronaut!",
+        "Houston, the station is complete! What a beautiful sight in orbit!"
+      ]
+    },
+    "tension": {
+      "50": [
+        "Half your oxygen... I mean time... is gone. Stay focused.",
+        "Fifty percent of mission time elapsed. Maintain pace, builder."
+      ],
+      "25": [
+        "Warning: mission time critical. Accelerate construction!",
+        "Twenty-five percent remaining. We need that station built, astronaut!"
+      ],
+      "10": [
+        "ALERT! Ten seconds to mission failure! Build, build, BUILD!",
+        "Final countdown! Place those last pieces NOW, astronaut!"
+      ],
+      "expired": [
+        "Mission failed. The station drifted into deep space. We'll try again, astronaut.",
+        "Time expired. The crew will have to wait. Regroup and relaunch, builder."
+      ]
+    }
+  },
+
+  "slotVariants": [
+    {
+      "variantId": "orbital_station",
+      "slots": [
+        { "id": "module_1_slot", "position": { "x": 2, "y": 3 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "module", "label": "Core module" },
+        { "id": "module_2_slot", "position": { "x": 4, "y": 3 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "module", "label": "Habitation module" },
+        { "id": "module_3_slot", "position": { "x": 2, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "module", "label": "Storage module" },
+        { "id": "solar_panel_1_slot", "position": { "x": 0, "y": 4 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "solar_panel", "label": "Left solar array" },
+        { "id": "solar_panel_2_slot", "position": { "x": 6, "y": 4 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "solar_panel", "label": "Right solar array" },
+        { "id": "antenna_slot", "position": { "x": 3, "y": 7 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "antenna", "label": "Communications antenna" },
+        { "id": "airlock_slot", "position": { "x": 4, "y": 5 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "airlock", "label": "Airlock" },
+        { "id": "lab_slot", "position": { "x": 5, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "lab", "label": "Science lab" },
+        { "id": "observation_slot", "position": { "x": 3, "y": 1 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "observation", "label": "Observation deck" },
+        { "id": "docking_slot", "position": { "x": 1, "y": 3 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "docking", "label": "Docking port" }
+      ]
+    },
+    {
+      "variantId": "expanded_station",
+      "slots": [
+        { "id": "module_1_slot", "position": { "x": 3, "y": 3 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "module", "label": "Core module" },
+        { "id": "module_2_slot", "position": { "x": 3, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "module", "label": "Habitation module" },
+        { "id": "module_3_slot", "position": { "x": 3, "y": 1 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "module", "label": "Storage module" },
+        { "id": "solar_panel_1_slot", "position": { "x": 0, "y": 3 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "solar_panel", "label": "Left solar array" },
+        { "id": "solar_panel_2_slot", "position": { "x": 6, "y": 3 }, "size": { "width": 2, "height": 1 }, "acceptsPieceType": "solar_panel", "label": "Right solar array" },
+        { "id": "antenna_slot", "position": { "x": 4, "y": 7 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "antenna", "label": "Communications antenna" },
+        { "id": "airlock_slot", "position": { "x": 5, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "airlock", "label": "Airlock" },
+        { "id": "lab_slot", "position": { "x": 6, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "lab", "label": "Science lab" },
+        { "id": "observation_slot", "position": { "x": 0, "y": 5 }, "size": { "width": 2, "height": 2 }, "acceptsPieceType": "observation", "label": "Observation deck" },
+        { "id": "docking_slot", "position": { "x": 2, "y": 4 }, "size": { "width": 1, "height": 1 }, "acceptsPieceType": "docking", "label": "Docking port" }
+      ]
+    }
+  ],
+
+  "pieces": [
+    {
+      "id": "module_1",
+      "type": "module",
+      "label": "Core module",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#ECEFF1", "#CFD8DC", "#B0BEC5", "#90A4AE"],
+      "textureVariants": ["titanium", "composite", "reinforced"]
+    },
+    {
+      "id": "module_2",
+      "type": "module",
+      "label": "Habitation module",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#ECEFF1", "#CFD8DC", "#B0BEC5", "#90A4AE"],
+      "textureVariants": ["titanium", "composite", "reinforced"]
+    },
+    {
+      "id": "module_3",
+      "type": "module",
+      "label": "Storage module",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#ECEFF1", "#CFD8DC", "#B0BEC5"],
+      "textureVariants": ["titanium", "composite", "reinforced"]
+    },
+    {
+      "id": "solar_panel_1",
+      "type": "solar_panel",
+      "label": "Left solar array",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#1A237E", "#283593", "#303F9F"],
+      "textureVariants": ["photovoltaic", "reflective", "advanced"]
+    },
+    {
+      "id": "solar_panel_2",
+      "type": "solar_panel",
+      "label": "Right solar array",
+      "size": { "width": 2, "height": 1 },
+      "colorVariants": ["#1A237E", "#283593", "#303F9F"],
+      "textureVariants": ["photovoltaic", "reflective", "advanced"]
+    },
+    {
+      "id": "antenna",
+      "type": "antenna",
+      "label": "Communications antenna",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#F5F5F5", "#E0E0E0", "#BDBDBD"],
+      "textureVariants": ["dish", "array", "compact"]
+    },
+    {
+      "id": "airlock",
+      "type": "airlock",
+      "label": "Airlock",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#F44336", "#FF5722", "#E53935", "#D32F2F"],
+      "textureVariants": ["standard", "reinforced", "emergency"]
+    },
+    {
+      "id": "lab",
+      "type": "lab",
+      "label": "Science lab",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#E8EAF6", "#C5CAE9", "#9FA8DA"],
+      "textureVariants": ["research", "biolab", "physics"]
+    },
+    {
+      "id": "observation_deck",
+      "type": "observation",
+      "label": "Observation deck",
+      "size": { "width": 2, "height": 2 },
+      "colorVariants": ["#E3F2FD", "#BBDEFB", "#90CAF9", "#64B5F6"],
+      "textureVariants": ["panoramic", "domed", "windowed"]
+    },
+    {
+      "id": "docking_port",
+      "type": "docking",
+      "label": "Docking port",
+      "size": { "width": 1, "height": 1 },
+      "colorVariants": ["#FFD600", "#FFAB00", "#FF6D00"],
+      "textureVariants": ["standard", "universal", "magnetic"]
+    }
+  ],
+
+  "bonusPieces": [
+    { "id": "space_telescope", "label": "Space telescope", "probability": 0.4 },
+    { "id": "robotic_arm", "label": "Robotic arm", "probability": 0.45 },
+    { "id": "satellite", "label": "Mini satellite", "probability": 0.3 }
+  ],
+
+  "easterEggs": [
+    {
+      "id": "ee_15_antenna_tap",
+      "type": "tap",
+      "trigger": { "position": { "x": 3, "y": 7 }, "tapsRequired": 4 },
+      "reward": { "type": "audio", "content": "Static crackles, then a strange alien voice transmits an otherworldly greeting! Beep boop zorp!" },
+      "hint": "Tap the communications antenna four times"
+    },
+    {
+      "id": "ee_15_speed_astronaut",
+      "type": "speed",
+      "trigger": { "completionTimeUnder": 20 },
+      "reward": { "type": "visual", "content": "An astronaut floats past the observation deck waving! You earned the Astronaut badge!" },
+      "hint": "Complete the space station in under 20 seconds"
+    },
+    {
+      "id": "ee_15_solar_first",
+      "type": "sequence",
+      "trigger": { "pieceSequence": ["solar_panel_1", "solar_panel_2", "module_1"] },
+      "reward": { "type": "narrative", "content": "Power before structure? Smart thinking, engineer! The station lights up with bonus energy! Solar bonus unlocked!" },
+      "hint": "Place both solar panels before the first module"
+    }
+  ]
+}
